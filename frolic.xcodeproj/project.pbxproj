@@ -3,19 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		891BFE2A2364864C001C9839 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891BFE292364864C001C9839 /* File.swift */; };
 		8956246F236402F6007972AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8956246E236402F6007972AC /* AppDelegate.swift */; };
 		89562471236402F6007972AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89562470236402F6007972AC /* SceneDelegate.swift */; };
 		89562473236402F6007972AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89562472236402F6007972AC /* ViewController.swift */; };
 		89562476236402F6007972AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89562474236402F6007972AC /* Main.storyboard */; };
 		89562478236402F9007972AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89562477236402F9007972AC /* Assets.xcassets */; };
 		8956247B236402F9007972AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89562479236402F9007972AC /* LaunchScreen.storyboard */; };
+		C855928DEF38EAF036E48D43 /* Pods_frolic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03539ACAAE5A0B68018C11E8 /* Pods_frolic.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03539ACAAE5A0B68018C11E8 /* Pods_frolic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_frolic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E58325696999BE6F257BAAB /* Pods-frolic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-frolic.release.xcconfig"; path = "Target Support Files/Pods-frolic/Pods-frolic.release.xcconfig"; sourceTree = "<group>"; };
+		891BFE292364864C001C9839 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		8956246B236402F6007972AC /* frolic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = frolic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8956246E236402F6007972AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89562470236402F6007972AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		89562477236402F9007972AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8956247A236402F9007972AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8956247C236402F9007972AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD9AA48B931B6C095B763E7F /* Pods-frolic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-frolic.debug.xcconfig"; path = "Target Support Files/Pods-frolic/Pods-frolic.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C855928DEF38EAF036E48D43 /* Pods_frolic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29938DB8B07738A1FBFDBAFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03539ACAAE5A0B68018C11E8 /* Pods_frolic.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		89562462236402F6007972AC = {
 			isa = PBXGroup;
 			children = (
 				8956246D236402F6007972AC /* frolic */,
 				8956246C236402F6007972AC /* Products */,
+				AD52545A5314A78F5AACB55B /* Pods */,
+				29938DB8B07738A1FBFDBAFE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,8 +104,18 @@
 		8956248423640520007972AC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				891BFE292364864C001C9839 /* File.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		AD52545A5314A78F5AACB55B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD9AA48B931B6C095B763E7F /* Pods-frolic.debug.xcconfig */,
+				2E58325696999BE6F257BAAB /* Pods-frolic.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,9 +125,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8956247F236402F9007972AC /* Build configuration list for PBXNativeTarget "frolic" */;
 			buildPhases = (
+				0D91F08AB2C445AB171B3555 /* [CP] Check Pods Manifest.lock */,
 				89562467236402F6007972AC /* Sources */,
 				89562468236402F6007972AC /* Frameworks */,
 				89562469236402F6007972AC /* Resources */,
+				D36F649F48D562AE725844EF /* [CP] Embed Pods Frameworks */,
+				7C5F8B4BAFA4780DFCB43B8B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -157,12 +187,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D91F08AB2C445AB171B3555 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-frolic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C5F8B4BAFA4780DFCB43B8B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-frolic/Pods-frolic-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-frolic/Pods-frolic-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-frolic/Pods-frolic-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D36F649F48D562AE725844EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-frolic/Pods-frolic-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-frolic/Pods-frolic-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-frolic/Pods-frolic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		89562467236402F6007972AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				89562473236402F6007972AC /* ViewController.swift in Sources */,
+				891BFE2A2364864C001C9839 /* File.swift in Sources */,
 				8956246F236402F6007972AC /* AppDelegate.swift in Sources */,
 				89562471236402F6007972AC /* SceneDelegate.swift in Sources */,
 			);
@@ -306,6 +396,7 @@
 		};
 		89562480236402F9007972AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD9AA48B931B6C095B763E7F /* Pods-frolic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -323,6 +414,7 @@
 		};
 		89562481236402F9007972AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E58325696999BE6F257BAAB /* Pods-frolic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

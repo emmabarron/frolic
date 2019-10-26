@@ -1,0 +1,30 @@
+PODS:
+  - GoogleMaps (3.5.0):
+    - GoogleMaps/Maps (= 3.5.0)
+  - GoogleMaps/Base (3.5.0)
+  - GoogleMaps/Maps (3.5.0):
+    - GoogleMaps/Base
+  - LyftSDK (2.0.0):
+    - LyftSDK/Core (= 2.0.0)
+  - LyftSDK/Core (2.0.0)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - GoogleMaps
+  - LyftSDK
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - GoogleMaps
+    - LyftSDK
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  GoogleMaps: 32ca02de09de357a10ac773f2c70f1986751392d
+  LyftSDK: b00938a8416d0123fdeb20a58e6bc97c968138f8
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: e65d04c81b93134e4aaffee6aa20d1392e995ab9
+
+COCOAPODS: 1.8.4

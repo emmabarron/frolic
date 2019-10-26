@@ -1,0 +1,1064 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 46921981F609C5BA3CB72EC4EA41299D /* Build configuration list for PBXAggregateTarget "GoogleMaps" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = GoogleMaps;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		09E2069A6C077CD0779468590C52B612 /* NearbyDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB175C88C85E9A295EDF36ABE50A91FD /* NearbyDriver.swift */; };
+		13637F954AD48068417E8F0E67154467 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD80D85A7BA519F543092C621170C350 /* Money.swift */; };
+		187C043F72767057038A0498AFFBAD93 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE266FB4C405B1528D8DD6D9119FD9A9 /* Asset.swift */; };
+		1942F7D3B7722A5637C3FC0BE44B1E6C /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CAD2BAB608673AC36026174724A2602 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C21D623D5E5E6F5AF446D1E2C04BE92 /* LyftAPIURLEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3618E6BC277D1E47967ED42ADCFCDBA /* LyftAPIURLEncoding.swift */; };
+		1C2F99825FCC1A39B08F656C84EAEB8F /* Pods-frolic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DFA4509EE409BDBB9650369A1F30CB0 /* Pods-frolic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2674F34F8A0FCD7A3A611E1D7266E57F /* CLLocationCoordinate2D+JSONMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1390AE34CDD90D93D368898863EFD9C /* CLLocationCoordinate2D+JSONMappable.swift */; };
+		2BF6FBC0A64BF107C5D64C61F1397770 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 474F4F37C252D2BDBA02CF9769F46FDB /* SwiftyJSON-dummy.m */; };
+		3291BEDEA00268F88378AEE4D64AC460 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		38FA08FBF126D3809C2EC87EBF8686BB /* I18N.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3F50AEA29A08AFAF047F0A783E6D36 /* I18N.swift */; };
+		420CB506141879B71F274ABC0B6946F0 /* URL+StaticString.swift in Sources */ = {isa = PBXBuildFile; fileRef = E587585C889ED59236B3BA3BB9A4FF25 /* URL+StaticString.swift */; };
+		464450D037D17ED5EE2322E180A6A9F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		483822915377A895E79EB573F4A9FB61 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67594ADD9BCA29E4A963F8129452271 /* Button.swift */; };
+		48D45616534E38575A391BD37E5E7B24 /* Safari.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1CDB1656AD7F9BF08B44468872106C /* Safari.swift */; };
+		4F297025A5C57C7BD32AAD4EE26A2409 /* PricingDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50748934AD22FD51F8E868C5806A78A8 /* PricingDetails.swift */; };
+		6A85D55B3F210BE1C83DDE75581F6E1C /* LyftConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39E4135D0BC28393A526AC5FC3B8430 /* LyftConfiguration.swift */; };
+		6D8EBC04A176CB2477503EBF6C991132 /* LyftButtonFull.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACDE79F4898D467D383989628A03DD0D /* LyftButtonFull.xib */; };
+		7150D550F35969FBFACEDF3AF91AD060 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A5920BBE6E69EAA1CAAA301961C152A /* Images.xcassets */; };
+		7745E21A6CB64B1D77DC2E369F1AC2CA /* LyftButtonRideTypeETA.xib in Resources */ = {isa = PBXBuildFile; fileRef = 762A283DEE0439F204FEB0FA82591953 /* LyftButtonRideTypeETA.xib */; };
+		7979187D0ABDA7955BF242DAF5FC75F8 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8239860837AAF20EB7631E02360C078D /* Result.swift */; };
+		7B4CE5C84161E2BFE477F42DFD634382 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7668D5964D6428430FE1289806EFD318 /* SwiftyJSON.swift */; };
+		872DCB248D85895FECCFCF9CFAC944A4 /* LyftAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E66DE25A0CF30A85A4A9C7430D9F133 /* LyftAPI.swift */; };
+		9407BEC7212ABABC341DDC5D29066D19 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7839B77F18AA1768A53BA60EEADF02 /* HTTPClient.swift */; };
+		9BB6F974BA6BA663965365E27F78CED0 /* LyftDeepLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61935B1912BA2AAF3A6F0805F1DADF8F /* LyftDeepLink.swift */; };
+		A9D21CC872A4B372649270FD5891707C /* Money+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0A836BA6CBE6B326D4FDC3A36F3ACC /* Money+UI.swift */; };
+		AB6A86FD848E4256165B4811D8CAF716 /* LyftAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0E5BA3710124824CFAF7238ACA2A4F /* LyftAPIError.swift */; };
+		B21B046F4C585CA6787D295680F1074E /* LyftButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A81C838EB0886A68461705566539B9 /* LyftButtonStyle.swift */; };
+		BFF16816A68D858828E5C37BE6B34075 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27066FDB2DC1FF607A86854361978340 /* UIColor+Extension.swift */; };
+		C0C0C29A6499B2E74274702F9B8EE62D /* JSONMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567D881CD3910DEEF40BBDCEF73D96D4 /* JSONMappable.swift */; };
+		C16A5EB376394E78B735A1101B437993 /* LyftSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C61C7E32CAC426BB501BDC702F839418 /* LyftSDK-dummy.m */; };
+		C47BE5F74C8ED9E47C269901B0584BE0 /* ETA.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD86F9329AC7716EA2677B03718AB98D /* ETA.swift */; };
+		C509ACC260DC48559868C34462B26350 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 81CE184D001CFDE2DA712FAF0E0E19FD /* en.lproj */; };
+		CB65D43E3843EA6AB96AFBD6205B7197 /* LyftSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A3F96C6B3B78516ECCB18D9475EB7B31 /* LyftSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB72A2E114493DC641E6529B77721134 /* Cost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2C98B703142C1F47BFA89AD92AB1F5 /* Cost.swift */; };
+		E051477E5E07AF6F2DAB9CBF685AD078 /* APIRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F37DD8790262CFB3EDC73955CF3F5B /* APIRoute.swift */; };
+		E49C725F17BC763FA5D0422863FF83BB /* LyftButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEF284D29E039F58706D07B6169663D /* LyftButton.swift */; };
+		E4B2585E47A557492EC1A8E8FBF3F496 /* RideType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F686EC475F7448A791C6C6FBE5725C38 /* RideType.swift */; };
+		EBE5C6C87FB1D2FE982014E044A6AB24 /* LyftButtonNone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51C73B4DC432C191C8B80792AA2AEF45 /* LyftButtonNone.xib */; };
+		F5CACFE8063B88DF95B5BE2B1C9881DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		F74EE380CE8084795A1E42FFBF43E414 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAF5C551E62D99B15C35CC8D2497BE8 /* Bundle+Extension.swift */; };
+		F8CE95DADA554A619BCB0DD08AAF9E18 /* Pods-frolic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 659C2CC81C6A5636D325558887680D38 /* Pods-frolic-dummy.m */; };
+		F95C18514190B5CA07A9DE92CB4774B1 /* RideKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385F84D76EF551C2B4EB984DDEF68EA4 /* RideKind.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2768F272975347CA22E090226BA62025 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D118A6A04828FD3CDA8640CD2B6796D2;
+			remoteInfo = SwiftyJSON;
+		};
+		EBCE2926D7A230DA54181768F57C6004 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 774F35FC64A64D786FAEEA976DBDFCEF;
+			remoteInfo = LyftSDK;
+		};
+		FF7BDFC4793F2B7A9D615DC0B2633FA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5B4BBC6DD552AC8943C7E22772FC1D3;
+			remoteInfo = GoogleMaps;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09B19F11B27616378E56F134E2F51175 /* Pods-frolic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-frolic.debug.xcconfig"; sourceTree = "<group>"; };
+		0CAD2BAB608673AC36026174724A2602 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		0E559A2BB45DB51DF7F9703F57B7D394 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		1E86583C337D506D90A9E5320B185F70 /* Pods-frolic.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-frolic.modulemap"; sourceTree = "<group>"; };
+		1F3F50AEA29A08AFAF047F0A783E6D36 /* I18N.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = I18N.swift; path = Sources/LyftUI/I18N.swift; sourceTree = "<group>"; };
+		27066FDB2DC1FF607A86854361978340 /* UIColor+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Extension.swift"; path = "Sources/LyftUI/UIColor+Extension.swift"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		362B999C2D0220136433377E93F1ABEE /* LyftSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LyftSDK.modulemap; sourceTree = "<group>"; };
+		385F84D76EF551C2B4EB984DDEF68EA4 /* RideKind.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RideKind.swift; path = Sources/LyftModels/RideKind.swift; sourceTree = "<group>"; };
+		39A9C9FD1C4576B972A6D8A1C760C725 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		3AF69C9DA9555120B2E86435DF816822 /* Pods-frolic-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frolic-frameworks.sh"; sourceTree = "<group>"; };
+		3F2C98B703142C1F47BFA89AD92AB1F5 /* Cost.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cost.swift; path = Sources/LyftModels/Cost.swift; sourceTree = "<group>"; };
+		44D6AF55DAC2624C3B689AB60F3AE498 /* Pods_frolic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_frolic.framework; path = "Pods-frolic.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		474F4F37C252D2BDBA02CF9769F46FDB /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		50748934AD22FD51F8E868C5806A78A8 /* PricingDetails.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PricingDetails.swift; path = Sources/LyftModels/PricingDetails.swift; sourceTree = "<group>"; };
+		51C73B4DC432C191C8B80792AA2AEF45 /* LyftButtonNone.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LyftButtonNone.xib; path = Sources/LyftUI/Resources/LyftButtonNone.xib; sourceTree = "<group>"; };
+		54F0BDB9F661AD2FDE109A06B4FF85C0 /* LyftSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LyftSDK.framework; path = LyftSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		567D881CD3910DEEF40BBDCEF73D96D4 /* JSONMappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONMappable.swift; path = Sources/LyftAPI/JSONMappable.swift; sourceTree = "<group>"; };
+		576E8110E2CD4ACD8A2449A51A2178A4 /* Pods-frolic-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-frolic-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5DFA4509EE409BDBB9650369A1F30CB0 /* Pods-frolic-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-frolic-umbrella.h"; sourceTree = "<group>"; };
+		61935B1912BA2AAF3A6F0805F1DADF8F /* LyftDeepLink.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LyftDeepLink.swift; path = Sources/LyftUI/LyftDeepLink.swift; sourceTree = "<group>"; };
+		659C2CC81C6A5636D325558887680D38 /* Pods-frolic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-frolic-dummy.m"; sourceTree = "<group>"; };
+		762A283DEE0439F204FEB0FA82591953 /* LyftButtonRideTypeETA.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LyftButtonRideTypeETA.xib; path = Sources/LyftUI/Resources/LyftButtonRideTypeETA.xib; sourceTree = "<group>"; };
+		7668D5964D6428430FE1289806EFD318 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON/SwiftyJSON.swift; sourceTree = "<group>"; };
+		78A81C838EB0886A68461705566539B9 /* LyftButtonStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LyftButtonStyle.swift; path = Sources/LyftUI/LyftButtonStyle.swift; sourceTree = "<group>"; };
+		7B0E5BA3710124824CFAF7238ACA2A4F /* LyftAPIError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LyftAPIError.swift; path = Sources/LyftAPI/LyftAPIError.swift; sourceTree = "<group>"; };
+		7E66DE25A0CF30A85A4A9C7430D9F133 /* LyftAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LyftAPI.swift; path = Sources/LyftAPI/LyftAPI.swift; sourceTree = "<group>"; };
+		7F7839B77F18AA1768A53BA60EEADF02 /* HTTPClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPClient.swift; path = Sources/LyftAPI/HTTPClient.swift; sourceTree = "<group>"; };
+		81CE184D001CFDE2DA712FAF0E0E19FD /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = Sources/LyftUI/Resources/en.lproj; sourceTree = "<group>"; };
+		8239860837AAF20EB7631E02360C078D /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Sources/LyftAPI/Result.swift; sourceTree = "<group>"; };
+		83B635018C55B4F6A1041C9EECB29324 /* LyftSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LyftSDK-Info.plist"; sourceTree = "<group>"; };
+		8A5920BBE6E69EAA1CAAA301961C152A /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Sources/LyftUI/Resources/Images.xcassets; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A3618E6BC277D1E47967ED42ADCFCDBA /* LyftAPIURLEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LyftAPIURLEncoding.swift; path = Sources/LyftAPI/LyftAPIURLEncoding.swift; sourceTree = "<group>"; };
+		A3AD6581F5B241CA199A30C4A78159A8 /* Pods-frolic-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-frolic-Info.plist"; sourceTree = "<group>"; };
+		A3F37DD8790262CFB3EDC73955CF3F5B /* APIRoute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIRoute.swift; path = Sources/LyftAPI/APIRoute.swift; sourceTree = "<group>"; };
+		A3F96C6B3B78516ECCB18D9475EB7B31 /* LyftSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LyftSDK-umbrella.h"; sourceTree = "<group>"; };
+		A7DCE7BF7FA3EEC58577CE2E0D873AD7 /* SwiftyJSON-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftyJSON-Info.plist"; sourceTree = "<group>"; };
+		ACDE79F4898D467D383989628A03DD0D /* LyftButtonFull.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LyftButtonFull.xib; path = Sources/LyftUI/Resources/LyftButtonFull.xib; sourceTree = "<group>"; };
+		ADB4CFDD01135DF617B715C4A45C1F25 /* Pods-frolic-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-frolic-acknowledgements.plist"; sourceTree = "<group>"; };
+		ADC6502A5618BDB1A631A2C0B3F08DEE /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		AE266FB4C405B1528D8DD6D9119FD9A9 /* Asset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Asset.swift; path = Sources/LyftUI/Asset.swift; sourceTree = "<group>"; };
+		AF0A836BA6CBE6B326D4FDC3A36F3ACC /* Money+UI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Money+UI.swift"; path = "Sources/LyftUI/Money+UI.swift"; sourceTree = "<group>"; };
+		B47A41EF659D609C0935DE55E9960709 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		B67594ADD9BCA29E4A963F8129452271 /* Button.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Button.swift; path = Sources/LyftUI/Button.swift; sourceTree = "<group>"; };
+		BB58F0EC57C28E484A184FDCA06CB18A /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		C1390AE34CDD90D93D368898863EFD9C /* CLLocationCoordinate2D+JSONMappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CLLocationCoordinate2D+JSONMappable.swift"; path = "Sources/LyftModels/CLLocationCoordinate2D+JSONMappable.swift"; sourceTree = "<group>"; };
+		C61C7E32CAC426BB501BDC702F839418 /* LyftSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LyftSDK-dummy.m"; sourceTree = "<group>"; };
+		CAFEFE14AD748A75F436A67576BAFC0D /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		CB1CDB1656AD7F9BF08B44468872106C /* Safari.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Safari.swift; path = Sources/LyftUI/Safari.swift; sourceTree = "<group>"; };
+		CBFFBA2D3CA7BB653E0B806B57B8AB64 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		CD143235841B347DB6DFEF6B5467A713 /* Pods-frolic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-frolic.release.xcconfig"; sourceTree = "<group>"; };
+		CD289892B65DA56C082E5ED1FB0A5281 /* GoogleMaps.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.xcconfig; sourceTree = "<group>"; };
+		CD80D85A7BA519F543092C621170C350 /* Money.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Money.swift; path = Sources/LyftModels/Money.swift; sourceTree = "<group>"; };
+		CFAF5C551E62D99B15C35CC8D2497BE8 /* Bundle+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+Extension.swift"; path = "Sources/LyftAPI/Bundle+Extension.swift"; sourceTree = "<group>"; };
+		D316DA81DEC2345C61C12F45DCB41893 /* Pods-frolic-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frolic-resources.sh"; sourceTree = "<group>"; };
+		D39E4135D0BC28393A526AC5FC3B8430 /* LyftConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LyftConfiguration.swift; path = Sources/LyftAPI/LyftConfiguration.swift; sourceTree = "<group>"; };
+		DD86F9329AC7716EA2677B03718AB98D /* ETA.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ETA.swift; path = Sources/LyftModels/ETA.swift; sourceTree = "<group>"; };
+		E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E25CDFD7584686707AE7ECCE981964D1 /* LyftSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LyftSDK-prefix.pch"; sourceTree = "<group>"; };
+		E587585C889ED59236B3BA3BB9A4FF25 /* URL+StaticString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URL+StaticString.swift"; path = "Sources/LyftAPI/URL+StaticString.swift"; sourceTree = "<group>"; };
+		EBBE13EEAD9F9CF80720C2D2C6837AE8 /* LyftSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LyftSDK.xcconfig; sourceTree = "<group>"; };
+		F686EC475F7448A791C6C6FBE5725C38 /* RideType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RideType.swift; path = Sources/LyftModels/RideType.swift; sourceTree = "<group>"; };
+		FB175C88C85E9A295EDF36ABE50A91FD /* NearbyDriver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NearbyDriver.swift; path = Sources/LyftModels/NearbyDriver.swift; sourceTree = "<group>"; };
+		FCEF284D29E039F58706D07B6169663D /* LyftButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LyftButton.swift; path = Sources/LyftUI/LyftButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7E03E05F7BA8E8955AB159181F5EF5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3291BEDEA00268F88378AEE4D64AC460 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD9C5A8DAF4334B670E91B2EC08DBE2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				464450D037D17ED5EE2322E180A6A9F5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDC639E602999EB5706A859223BFB62D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5CACFE8063B88DF95B5BE2B1C9881DF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05CE2C1398E12D491547B0AB50BB6DCB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB58F0EC57C28E484A184FDCA06CB18A /* SwiftyJSON.modulemap */,
+				CBFFBA2D3CA7BB653E0B806B57B8AB64 /* SwiftyJSON.xcconfig */,
+				474F4F37C252D2BDBA02CF9769F46FDB /* SwiftyJSON-dummy.m */,
+				A7DCE7BF7FA3EEC58577CE2E0D873AD7 /* SwiftyJSON-Info.plist */,
+				CAFEFE14AD748A75F436A67576BAFC0D /* SwiftyJSON-prefix.pch */,
+				0CAD2BAB608673AC36026174724A2602 /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		0A7177E35202EAA07A21E017560FFDEE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0E559A2BB45DB51DF7F9703F57B7D394 /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0ABE6C97A71CA7ADE3714245BB86D81C /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				9E2A0D3401A36C61D55C521BB07F5046 /* Frameworks */,
+				0A7177E35202EAA07A21E017560FFDEE /* Resources */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		1D0F81D8EAA9A16C39988AFF0338AFED /* Pods-frolic */ = {
+			isa = PBXGroup;
+			children = (
+				1E86583C337D506D90A9E5320B185F70 /* Pods-frolic.modulemap */,
+				576E8110E2CD4ACD8A2449A51A2178A4 /* Pods-frolic-acknowledgements.markdown */,
+				ADB4CFDD01135DF617B715C4A45C1F25 /* Pods-frolic-acknowledgements.plist */,
+				659C2CC81C6A5636D325558887680D38 /* Pods-frolic-dummy.m */,
+				3AF69C9DA9555120B2E86435DF816822 /* Pods-frolic-frameworks.sh */,
+				A3AD6581F5B241CA199A30C4A78159A8 /* Pods-frolic-Info.plist */,
+				D316DA81DEC2345C61C12F45DCB41893 /* Pods-frolic-resources.sh */,
+				5DFA4509EE409BDBB9650369A1F30CB0 /* Pods-frolic-umbrella.h */,
+				09B19F11B27616378E56F134E2F51175 /* Pods-frolic.debug.xcconfig */,
+				CD143235841B347DB6DFEF6B5467A713 /* Pods-frolic.release.xcconfig */,
+			);
+			name = "Pods-frolic";
+			path = "Target Support Files/Pods-frolic";
+			sourceTree = "<group>";
+		};
+		273016CCE992E8F4796D6BF9820E03BA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				362B999C2D0220136433377E93F1ABEE /* LyftSDK.modulemap */,
+				EBBE13EEAD9F9CF80720C2D2C6837AE8 /* LyftSDK.xcconfig */,
+				C61C7E32CAC426BB501BDC702F839418 /* LyftSDK-dummy.m */,
+				83B635018C55B4F6A1041C9EECB29324 /* LyftSDK-Info.plist */,
+				E25CDFD7584686707AE7ECCE981964D1 /* LyftSDK-prefix.pch */,
+				A3F96C6B3B78516ECCB18D9475EB7B31 /* LyftSDK-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LyftSDK";
+			sourceTree = "<group>";
+		};
+		386BEC51921406A947C5E7E6353C6DBE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A3F37DD8790262CFB3EDC73955CF3F5B /* APIRoute.swift */,
+				AE266FB4C405B1528D8DD6D9119FD9A9 /* Asset.swift */,
+				CFAF5C551E62D99B15C35CC8D2497BE8 /* Bundle+Extension.swift */,
+				B67594ADD9BCA29E4A963F8129452271 /* Button.swift */,
+				C1390AE34CDD90D93D368898863EFD9C /* CLLocationCoordinate2D+JSONMappable.swift */,
+				3F2C98B703142C1F47BFA89AD92AB1F5 /* Cost.swift */,
+				DD86F9329AC7716EA2677B03718AB98D /* ETA.swift */,
+				7F7839B77F18AA1768A53BA60EEADF02 /* HTTPClient.swift */,
+				1F3F50AEA29A08AFAF047F0A783E6D36 /* I18N.swift */,
+				567D881CD3910DEEF40BBDCEF73D96D4 /* JSONMappable.swift */,
+				7E66DE25A0CF30A85A4A9C7430D9F133 /* LyftAPI.swift */,
+				7B0E5BA3710124824CFAF7238ACA2A4F /* LyftAPIError.swift */,
+				A3618E6BC277D1E47967ED42ADCFCDBA /* LyftAPIURLEncoding.swift */,
+				FCEF284D29E039F58706D07B6169663D /* LyftButton.swift */,
+				78A81C838EB0886A68461705566539B9 /* LyftButtonStyle.swift */,
+				D39E4135D0BC28393A526AC5FC3B8430 /* LyftConfiguration.swift */,
+				61935B1912BA2AAF3A6F0805F1DADF8F /* LyftDeepLink.swift */,
+				CD80D85A7BA519F543092C621170C350 /* Money.swift */,
+				AF0A836BA6CBE6B326D4FDC3A36F3ACC /* Money+UI.swift */,
+				FB175C88C85E9A295EDF36ABE50A91FD /* NearbyDriver.swift */,
+				50748934AD22FD51F8E868C5806A78A8 /* PricingDetails.swift */,
+				8239860837AAF20EB7631E02360C078D /* Result.swift */,
+				385F84D76EF551C2B4EB984DDEF68EA4 /* RideKind.swift */,
+				F686EC475F7448A791C6C6FBE5725C38 /* RideType.swift */,
+				CB1CDB1656AD7F9BF08B44468872106C /* Safari.swift */,
+				27066FDB2DC1FF607A86854361978340 /* UIColor+Extension.swift */,
+				E587585C889ED59236B3BA3BB9A4FF25 /* URL+StaticString.swift */,
+				B08BF2F714852270017E77B22A6BC90C /* Resources */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		677C0695DC2ACF897BA6AEFE3EE48961 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54F0BDB9F661AD2FDE109A06B4FF85C0 /* LyftSDK.framework */,
+				44D6AF55DAC2624C3B689AB60F3AE498 /* Pods_frolic.framework */,
+				E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8161EA6F0CEC8D82F74A4491A4A29B4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39A9C9FD1C4576B972A6D8A1C760C725 /* GoogleMapsBase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A7445896968B7D5D7721BD85EF30C2C /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				AB856DE013A0EADE09EC6877203F3477 /* Base */,
+				0ABE6C97A71CA7ADE3714245BB86D81C /* Maps */,
+				D426244E95517638BB038134A4D13E83 /* Support Files */,
+			);
+			name = GoogleMaps;
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		9E2A0D3401A36C61D55C521BB07F5046 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADC6502A5618BDB1A631A2C0B3F08DEE /* GoogleMaps.framework */,
+				B47A41EF659D609C0935DE55E9960709 /* GoogleMapsCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB856DE013A0EADE09EC6877203F3477 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8161EA6F0CEC8D82F74A4491A4A29B4D /* Frameworks */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		ACA1E77AD5D24E0260B0E0A0FBA6A61E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1D0F81D8EAA9A16C39988AFF0338AFED /* Pods-frolic */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B08BF2F714852270017E77B22A6BC90C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				81CE184D001CFDE2DA712FAF0E0E19FD /* en.lproj */,
+				8A5920BBE6E69EAA1CAAA301961C152A /* Images.xcassets */,
+				ACDE79F4898D467D383989628A03DD0D /* LyftButtonFull.xib */,
+				51C73B4DC432C191C8B80792AA2AEF45 /* LyftButtonNone.xib */,
+				762A283DEE0439F204FEB0FA82591953 /* LyftButtonRideTypeETA.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C24C70A7BB34A750CF66D630DFE41AEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A7445896968B7D5D7721BD85EF30C2C /* GoogleMaps */,
+				C620E8A3396B6EA140988F332E0B6312 /* LyftSDK */,
+				D1F55346292258F88B313C98FADF4932 /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C620E8A3396B6EA140988F332E0B6312 /* LyftSDK */ = {
+			isa = PBXGroup;
+			children = (
+				386BEC51921406A947C5E7E6353C6DBE /* Core */,
+				273016CCE992E8F4796D6BF9820E03BA /* Support Files */,
+			);
+			name = LyftSDK;
+			path = LyftSDK;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				C24C70A7BB34A750CF66D630DFE41AEA /* Pods */,
+				677C0695DC2ACF897BA6AEFE3EE48961 /* Products */,
+				ACA1E77AD5D24E0260B0E0A0FBA6A61E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D1F55346292258F88B313C98FADF4932 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				7668D5964D6428430FE1289806EFD318 /* SwiftyJSON.swift */,
+				05CE2C1398E12D491547B0AB50BB6DCB /* Support Files */,
+			);
+			name = SwiftyJSON;
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D426244E95517638BB038134A4D13E83 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD289892B65DA56C082E5ED1FB0A5281 /* GoogleMaps.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GoogleMaps";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3517D1ED6715561EFB072EB30DABC899 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB65D43E3843EA6AB96AFBD6205B7197 /* LyftSDK-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D7DD627DB5C5AD636646E57B685AFB2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1942F7D3B7722A5637C3FC0BE44B1E6C /* SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E51D8D39CAA99C0A2E055FF9544BE4F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C2F99825FCC1A39B08F656C84EAEB8F /* Pods-frolic-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		720AF0BC4A6D6D1BCB8B9365B0E18FA7 /* Pods-frolic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0F2F7B9EA9954D94333BE362C466D83 /* Build configuration list for PBXNativeTarget "Pods-frolic" */;
+			buildPhases = (
+				8E51D8D39CAA99C0A2E055FF9544BE4F /* Headers */,
+				0D182B9FB74A30F936305D209F0C58A3 /* Sources */,
+				A7E03E05F7BA8E8955AB159181F5EF5F /* Frameworks */,
+				3A13D13D7BBB991F959FEFEB9ABB6C41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB2649F5C72278C293C4E1405BAF19C5 /* PBXTargetDependency */,
+				5CDF3FD61A1D45B7B08E67DC2D0D6DC9 /* PBXTargetDependency */,
+				605779F65B712B954A7435C1C285C71B /* PBXTargetDependency */,
+			);
+			name = "Pods-frolic";
+			productName = "Pods-frolic";
+			productReference = 44D6AF55DAC2624C3B689AB60F3AE498 /* Pods_frolic.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		774F35FC64A64D786FAEEA976DBDFCEF /* LyftSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C995EEEBE9A530E4601ECBA8C8B67199 /* Build configuration list for PBXNativeTarget "LyftSDK" */;
+			buildPhases = (
+				3517D1ED6715561EFB072EB30DABC899 /* Headers */,
+				9258B602403A75259A799CDFFB79E53B /* Sources */,
+				DDC639E602999EB5706A859223BFB62D /* Frameworks */,
+				8171E01A03428092DF4D53E987E45173 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LyftSDK;
+			productName = LyftSDK;
+			productReference = 54F0BDB9F661AD2FDE109A06B4FF85C0 /* LyftSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D118A6A04828FD3CDA8640CD2B6796D2 /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62468BF9C7EDA172E951A24083C3ECA7 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				3D7DD627DB5C5AD636646E57B685AFB2 /* Headers */,
+				1700C451C98D9DCECBEDFC5E351C5A9E /* Sources */,
+				AD9C5A8DAF4334B670E91B2EC08DBE2C /* Frameworks */,
+				D098F7F0080A87A1F472C81FC2F85528 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 677C0695DC2ACF897BA6AEFE3EE48961 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */,
+				774F35FC64A64D786FAEEA976DBDFCEF /* LyftSDK */,
+				720AF0BC4A6D6D1BCB8B9365B0E18FA7 /* Pods-frolic */,
+				D118A6A04828FD3CDA8640CD2B6796D2 /* SwiftyJSON */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A13D13D7BBB991F959FEFEB9ABB6C41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8171E01A03428092DF4D53E987E45173 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C509ACC260DC48559868C34462B26350 /* en.lproj in Resources */,
+				7150D550F35969FBFACEDF3AF91AD060 /* Images.xcassets in Resources */,
+				6D8EBC04A176CB2477503EBF6C991132 /* LyftButtonFull.xib in Resources */,
+				EBE5C6C87FB1D2FE982014E044A6AB24 /* LyftButtonNone.xib in Resources */,
+				7745E21A6CB64B1D77DC2E369F1AC2CA /* LyftButtonRideTypeETA.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D098F7F0080A87A1F472C81FC2F85528 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D182B9FB74A30F936305D209F0C58A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8CE95DADA554A619BCB0DD08AAF9E18 /* Pods-frolic-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1700C451C98D9DCECBEDFC5E351C5A9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF6FBC0A64BF107C5D64C61F1397770 /* SwiftyJSON-dummy.m in Sources */,
+				7B4CE5C84161E2BFE477F42DFD634382 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9258B602403A75259A799CDFFB79E53B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E051477E5E07AF6F2DAB9CBF685AD078 /* APIRoute.swift in Sources */,
+				187C043F72767057038A0498AFFBAD93 /* Asset.swift in Sources */,
+				F74EE380CE8084795A1E42FFBF43E414 /* Bundle+Extension.swift in Sources */,
+				483822915377A895E79EB573F4A9FB61 /* Button.swift in Sources */,
+				2674F34F8A0FCD7A3A611E1D7266E57F /* CLLocationCoordinate2D+JSONMappable.swift in Sources */,
+				CB72A2E114493DC641E6529B77721134 /* Cost.swift in Sources */,
+				C47BE5F74C8ED9E47C269901B0584BE0 /* ETA.swift in Sources */,
+				9407BEC7212ABABC341DDC5D29066D19 /* HTTPClient.swift in Sources */,
+				38FA08FBF126D3809C2EC87EBF8686BB /* I18N.swift in Sources */,
+				C0C0C29A6499B2E74274702F9B8EE62D /* JSONMappable.swift in Sources */,
+				872DCB248D85895FECCFCF9CFAC944A4 /* LyftAPI.swift in Sources */,
+				AB6A86FD848E4256165B4811D8CAF716 /* LyftAPIError.swift in Sources */,
+				1C21D623D5E5E6F5AF446D1E2C04BE92 /* LyftAPIURLEncoding.swift in Sources */,
+				E49C725F17BC763FA5D0422863FF83BB /* LyftButton.swift in Sources */,
+				B21B046F4C585CA6787D295680F1074E /* LyftButtonStyle.swift in Sources */,
+				6A85D55B3F210BE1C83DDE75581F6E1C /* LyftConfiguration.swift in Sources */,
+				9BB6F974BA6BA663965365E27F78CED0 /* LyftDeepLink.swift in Sources */,
+				C16A5EB376394E78B735A1101B437993 /* LyftSDK-dummy.m in Sources */,
+				A9D21CC872A4B372649270FD5891707C /* Money+UI.swift in Sources */,
+				13637F954AD48068417E8F0E67154467 /* Money.swift in Sources */,
+				09E2069A6C077CD0779468590C52B612 /* NearbyDriver.swift in Sources */,
+				4F297025A5C57C7BD32AAD4EE26A2409 /* PricingDetails.swift in Sources */,
+				7979187D0ABDA7955BF242DAF5FC75F8 /* Result.swift in Sources */,
+				F95C18514190B5CA07A9DE92CB4774B1 /* RideKind.swift in Sources */,
+				E4B2585E47A557492EC1A8E8FBF3F496 /* RideType.swift in Sources */,
+				48D45616534E38575A391BD37E5E7B24 /* Safari.swift in Sources */,
+				BFF16816A68D858828E5C37BE6B34075 /* UIColor+Extension.swift in Sources */,
+				420CB506141879B71F274ABC0B6946F0 /* URL+StaticString.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5CDF3FD61A1D45B7B08E67DC2D0D6DC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LyftSDK;
+			target = 774F35FC64A64D786FAEEA976DBDFCEF /* LyftSDK */;
+			targetProxy = EBCE2926D7A230DA54181768F57C6004 /* PBXContainerItemProxy */;
+		};
+		605779F65B712B954A7435C1C285C71B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = D118A6A04828FD3CDA8640CD2B6796D2 /* SwiftyJSON */;
+			targetProxy = 2768F272975347CA22E090226BA62025 /* PBXContainerItemProxy */;
+		};
+		AB2649F5C72278C293C4E1405BAF19C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleMaps;
+			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
+			targetProxy = FF7BDFC4793F2B7A9D615DC0B2633FA4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1C00EA1360D6F77B0B75261EE0024994 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBBE13EEAD9F9CF80720C2D2C6837AE8 /* LyftSDK.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LyftSDK/LyftSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LyftSDK/LyftSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/LyftSDK/LyftSDK.modulemap";
+				PRODUCT_MODULE_NAME = LyftSDK;
+				PRODUCT_NAME = LyftSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4AA46832D8A16AA4E4811383B204D2A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD289892B65DA56C082E5ED1FB0A5281 /* GoogleMaps.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6E2226BAF771B9AEEA8FE646C18E7879 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBFFBA2D3CA7BB653E0B806B57B8AB64 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		72030B019464865673551207C6FBF5D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD143235841B347DB6DFEF6B5467A713 /* Pods-frolic.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-frolic/Pods-frolic-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-frolic/Pods-frolic.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		95F13DBF4A01DA32AC0FB1C0F3575670 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09B19F11B27616378E56F134E2F51175 /* Pods-frolic.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-frolic/Pods-frolic-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-frolic/Pods-frolic.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B999C2A7576508203D5E5232F16EAF69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBBE13EEAD9F9CF80720C2D2C6837AE8 /* LyftSDK.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LyftSDK/LyftSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LyftSDK/LyftSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/LyftSDK/LyftSDK.modulemap";
+				PRODUCT_MODULE_NAME = LyftSDK;
+				PRODUCT_NAME = LyftSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C7565AEA7FCD8F66CAF546DC5AF1404F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD289892B65DA56C082E5ED1FB0A5281 /* GoogleMaps.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E8F35927ECB754A46E0AC8C2BACAF32D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBFFBA2D3CA7BB653E0B806B57B8AB64 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46921981F609C5BA3CB72EC4EA41299D /* Build configuration list for PBXAggregateTarget "GoogleMaps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AA46832D8A16AA4E4811383B204D2A4 /* Debug */,
+				C7565AEA7FCD8F66CAF546DC5AF1404F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62468BF9C7EDA172E951A24083C3ECA7 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8F35927ECB754A46E0AC8C2BACAF32D /* Debug */,
+				6E2226BAF771B9AEEA8FE646C18E7879 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C995EEEBE9A530E4601ECBA8C8B67199 /* Build configuration list for PBXNativeTarget "LyftSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B999C2A7576508203D5E5232F16EAF69 /* Debug */,
+				1C00EA1360D6F77B0B75261EE0024994 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0F2F7B9EA9954D94333BE362C466D83 /* Build configuration list for PBXNativeTarget "Pods-frolic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95F13DBF4A01DA32AC0FB1C0F3575670 /* Debug */,
+				72030B019464865673551207C6FBF5D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
