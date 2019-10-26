@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -19,148 +19,207 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		09E2069A6C077CD0779468590C52B612 /* NearbyDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB175C88C85E9A295EDF36ABE50A91FD /* NearbyDriver.swift */; };
-		13637F954AD48068417E8F0E67154467 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD80D85A7BA519F543092C621170C350 /* Money.swift */; };
-		187C043F72767057038A0498AFFBAD93 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE266FB4C405B1528D8DD6D9119FD9A9 /* Asset.swift */; };
-		1942F7D3B7722A5637C3FC0BE44B1E6C /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CAD2BAB608673AC36026174724A2602 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1C21D623D5E5E6F5AF446D1E2C04BE92 /* LyftAPIURLEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3618E6BC277D1E47967ED42ADCFCDBA /* LyftAPIURLEncoding.swift */; };
-		1C2F99825FCC1A39B08F656C84EAEB8F /* Pods-frolic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DFA4509EE409BDBB9650369A1F30CB0 /* Pods-frolic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2674F34F8A0FCD7A3A611E1D7266E57F /* CLLocationCoordinate2D+JSONMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1390AE34CDD90D93D368898863EFD9C /* CLLocationCoordinate2D+JSONMappable.swift */; };
-		2BF6FBC0A64BF107C5D64C61F1397770 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 474F4F37C252D2BDBA02CF9769F46FDB /* SwiftyJSON-dummy.m */; };
-		3291BEDEA00268F88378AEE4D64AC460 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		38FA08FBF126D3809C2EC87EBF8686BB /* I18N.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3F50AEA29A08AFAF047F0A783E6D36 /* I18N.swift */; };
-		420CB506141879B71F274ABC0B6946F0 /* URL+StaticString.swift in Sources */ = {isa = PBXBuildFile; fileRef = E587585C889ED59236B3BA3BB9A4FF25 /* URL+StaticString.swift */; };
+		09E2069A6C077CD0779468590C52B612 /* NearbyDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1917C2E2AC7D43942F90FBE1D7F758 /* NearbyDriver.swift */; };
+		0C5E11DE24DAA737704B355F5F2F3426 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26643DBF1DCFECBB4E30814946BB96E1 /* ParameterEncoding.swift */; };
+		132E0F619E4338E5D1B27E4C72076B3F /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45019E86B3F9A1C01721E71C3CEEB111 /* Notifications.swift */; };
+		13637F954AD48068417E8F0E67154467 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1BBA4DDAD28054055E7AFD191BBDA8 /* Money.swift */; };
+		187C043F72767057038A0498AFFBAD93 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = F910003429BAEA989573E5909D1E4BA1 /* Asset.swift */; };
+		1942F7D3B7722A5637C3FC0BE44B1E6C /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B7779B60D96075E74C537DEBFB4BD1 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1945CD5D63A1C164AEAAA9A33E85571E /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B5E8E4BDD4F7BBA20B7B8152CB8652 /* Alamofire-dummy.m */; };
+		1986B50C74F1697EA43F68335C93CEB3 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7199E9763316AFCB8E18C97FDBDD07 /* MultipartFormData.swift */; };
+		1C21D623D5E5E6F5AF446D1E2C04BE92 /* LyftAPIURLEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77276E1C1A0C0F0361C29102E2272C72 /* LyftAPIURLEncoding.swift */; };
+		2674F34F8A0FCD7A3A611E1D7266E57F /* CLLocationCoordinate2D+JSONMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F65A65369AD9488F5002640C12AA67C /* CLLocationCoordinate2D+JSONMappable.swift */; };
+		2BF6FBC0A64BF107C5D64C61F1397770 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5C8227361B68CCB77FE1F83A53F67E /* SwiftyJSON-dummy.m */; };
+		2C61B040BA6A9A7AE66C4D9BA26D5520 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B536FA06A7465450FF9BD6F9260000C3 /* SessionDelegate.swift */; };
+		3571F958A3907B3A806E62D50C2550D4 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836DC04F86E092082F97C7CF4799AC2B /* NetworkReachabilityManager.swift */; };
+		38FA08FBF126D3809C2EC87EBF8686BB /* I18N.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACF0DAE7A3E5652019EB5DB2680F7D /* I18N.swift */; };
+		40F4B6EFD3F43AFF6F1D52AA68A04A30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		420CB506141879B71F274ABC0B6946F0 /* URL+StaticString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2440D85B3674E98170C9A63B7189312E /* URL+StaticString.swift */; };
 		464450D037D17ED5EE2322E180A6A9F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		483822915377A895E79EB573F4A9FB61 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67594ADD9BCA29E4A963F8129452271 /* Button.swift */; };
-		48D45616534E38575A391BD37E5E7B24 /* Safari.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1CDB1656AD7F9BF08B44468872106C /* Safari.swift */; };
-		4F297025A5C57C7BD32AAD4EE26A2409 /* PricingDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50748934AD22FD51F8E868C5806A78A8 /* PricingDetails.swift */; };
-		6A85D55B3F210BE1C83DDE75581F6E1C /* LyftConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39E4135D0BC28393A526AC5FC3B8430 /* LyftConfiguration.swift */; };
-		6D8EBC04A176CB2477503EBF6C991132 /* LyftButtonFull.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACDE79F4898D467D383989628A03DD0D /* LyftButtonFull.xib */; };
-		7150D550F35969FBFACEDF3AF91AD060 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A5920BBE6E69EAA1CAAA301961C152A /* Images.xcassets */; };
-		7745E21A6CB64B1D77DC2E369F1AC2CA /* LyftButtonRideTypeETA.xib in Resources */ = {isa = PBXBuildFile; fileRef = 762A283DEE0439F204FEB0FA82591953 /* LyftButtonRideTypeETA.xib */; };
-		7979187D0ABDA7955BF242DAF5FC75F8 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8239860837AAF20EB7631E02360C078D /* Result.swift */; };
-		7B4CE5C84161E2BFE477F42DFD634382 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7668D5964D6428430FE1289806EFD318 /* SwiftyJSON.swift */; };
-		872DCB248D85895FECCFCF9CFAC944A4 /* LyftAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E66DE25A0CF30A85A4A9C7430D9F133 /* LyftAPI.swift */; };
-		9407BEC7212ABABC341DDC5D29066D19 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7839B77F18AA1768A53BA60EEADF02 /* HTTPClient.swift */; };
-		9BB6F974BA6BA663965365E27F78CED0 /* LyftDeepLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61935B1912BA2AAF3A6F0805F1DADF8F /* LyftDeepLink.swift */; };
-		A9D21CC872A4B372649270FD5891707C /* Money+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0A836BA6CBE6B326D4FDC3A36F3ACC /* Money+UI.swift */; };
-		AB6A86FD848E4256165B4811D8CAF716 /* LyftAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0E5BA3710124824CFAF7238ACA2A4F /* LyftAPIError.swift */; };
-		B21B046F4C585CA6787D295680F1074E /* LyftButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A81C838EB0886A68461705566539B9 /* LyftButtonStyle.swift */; };
-		BFF16816A68D858828E5C37BE6B34075 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27066FDB2DC1FF607A86854361978340 /* UIColor+Extension.swift */; };
-		C0C0C29A6499B2E74274702F9B8EE62D /* JSONMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567D881CD3910DEEF40BBDCEF73D96D4 /* JSONMappable.swift */; };
-		C16A5EB376394E78B735A1101B437993 /* LyftSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C61C7E32CAC426BB501BDC702F839418 /* LyftSDK-dummy.m */; };
-		C47BE5F74C8ED9E47C269901B0584BE0 /* ETA.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD86F9329AC7716EA2677B03718AB98D /* ETA.swift */; };
-		C509ACC260DC48559868C34462B26350 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 81CE184D001CFDE2DA712FAF0E0E19FD /* en.lproj */; };
-		CB65D43E3843EA6AB96AFBD6205B7197 /* LyftSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A3F96C6B3B78516ECCB18D9475EB7B31 /* LyftSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CB72A2E114493DC641E6529B77721134 /* Cost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2C98B703142C1F47BFA89AD92AB1F5 /* Cost.swift */; };
-		E051477E5E07AF6F2DAB9CBF685AD078 /* APIRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F37DD8790262CFB3EDC73955CF3F5B /* APIRoute.swift */; };
-		E49C725F17BC763FA5D0422863FF83BB /* LyftButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEF284D29E039F58706D07B6169663D /* LyftButton.swift */; };
-		E4B2585E47A557492EC1A8E8FBF3F496 /* RideType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F686EC475F7448A791C6C6FBE5725C38 /* RideType.swift */; };
-		EBE5C6C87FB1D2FE982014E044A6AB24 /* LyftButtonNone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51C73B4DC432C191C8B80792AA2AEF45 /* LyftButtonNone.xib */; };
+		483822915377A895E79EB573F4A9FB61 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD2D3C0E2200076D7BE231241B5AC48 /* Button.swift */; };
+		48D45616534E38575A391BD37E5E7B24 /* Safari.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F05887A1923C376D11898D0F4602566 /* Safari.swift */; };
+		4F297025A5C57C7BD32AAD4EE26A2409 /* PricingDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C9635B434F82B716594A1CF789F83 /* PricingDetails.swift */; };
+		53791F5E5F07400F92CFDFC89A432305 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B6375AC0FD56F6E3B2A9198CBA8A6F /* Validation.swift */; };
+		64744C911253C3E01461FAD7C935C8D7 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B8B8A44F2DC6F1A170348A1321748A /* Result.swift */; };
+		6896C9951F10EC2271934B0A1FFF96B1 /* Pods-frolic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 659C2CC81C6A5636D325558887680D38 /* Pods-frolic-dummy.m */; };
+		6A85D55B3F210BE1C83DDE75581F6E1C /* LyftConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2DB37587CF9131CCC10787E114595B /* LyftConfiguration.swift */; };
+		6D8EBC04A176CB2477503EBF6C991132 /* LyftButtonFull.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10C5B08D8A4308A54581F19002398DAC /* LyftButtonFull.xib */; };
+		7150D550F35969FBFACEDF3AF91AD060 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D794EC93CA712ADCB2741081BEDED3A /* Images.xcassets */; };
+		7664FD4F59A0C00866CBAE60B0A3AD64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		7745E21A6CB64B1D77DC2E369F1AC2CA /* LyftButtonRideTypeETA.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88DADA5947EFDCD1AA0D52830BB02E90 /* LyftButtonRideTypeETA.xib */; };
+		7979187D0ABDA7955BF242DAF5FC75F8 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0783E681516C49B6E9D0D2F84304E8 /* Result.swift */; };
+		7B4CE5C84161E2BFE477F42DFD634382 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18D8C79C9F353EC2121002FB72A46FA /* SwiftyJSON.swift */; };
+		83956E20859CDBBE7BC38ABADE0170FB /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E8990EF59D9A80F7D717B445E1666C /* AFError.swift */; };
+		872DCB248D85895FECCFCF9CFAC944A4 /* LyftAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826D85DDAD2AD42EC6B1973F952CF8D /* LyftAPI.swift */; };
+		931BBB8230A25161D5C37528A8F9FECF /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AE3D0AD26737061826047432666C9C /* SessionManager.swift */; };
+		933FDA5970AA525D6CB92BFEBA2BAB4A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4693BF540307A7EA50241F24C4F373B7 /* Timeline.swift */; };
+		9407BEC7212ABABC341DDC5D29066D19 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E9AEC166A93EFD228EEE49BBE87DE9 /* HTTPClient.swift */; };
+		98A929C8E9012AB167672714FFD2113C /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088262013DCC07C746D84689E8C9625D /* Request.swift */; };
+		9BB6F974BA6BA663965365E27F78CED0 /* LyftDeepLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD4D53F769FF4A4F863B88C6AEBED56 /* LyftDeepLink.swift */; };
+		A9D21CC872A4B372649270FD5891707C /* Money+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F824EE8904CA439A85D9DF87B1E8B8B7 /* Money+UI.swift */; };
+		AB6A86FD848E4256165B4811D8CAF716 /* LyftAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0982BF93F2590A5621DE8FBF67FCAFC5 /* LyftAPIError.swift */; };
+		AFC64B1097F7355FF423D6A73E9C7210 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D5702873787B4BF96F9427A5322F51 /* TaskDelegate.swift */; };
+		B21B046F4C585CA6787D295680F1074E /* LyftButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA32FE8D3EF69421E4F5AE24286B2FE /* LyftButtonStyle.swift */; };
+		BEE6B677416CA71C981D1D3F60B18C96 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F57A6E2791FD5A2553BAE1535A8EB2C /* Alamofire.swift */; };
+		BFF16816A68D858828E5C37BE6B34075 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBA8248D740535588CE6D8BD7F9E1E5 /* UIColor+Extension.swift */; };
+		C0C0C29A6499B2E74274702F9B8EE62D /* JSONMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF807F27BF0290F93E8EB98C550E408 /* JSONMappable.swift */; };
+		C16A5EB376394E78B735A1101B437993 /* LyftSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 774FBB700AF04E943ECA1B1F946D1C9C /* LyftSDK-dummy.m */; };
+		C47BE5F74C8ED9E47C269901B0584BE0 /* ETA.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD243E0EB1794E06E24148D89523FDD /* ETA.swift */; };
+		C509ACC260DC48559868C34462B26350 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 2A36E59F32FDC4AF5DAF16A6BD3A2E96 /* en.lproj */; };
+		CB65D43E3843EA6AB96AFBD6205B7197 /* LyftSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC31FF0DDBCC2EB47A3D15063326880 /* LyftSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB72A2E114493DC641E6529B77721134 /* Cost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4F04FE830D9AD0E8DED127B77367A1 /* Cost.swift */; };
+		D3D8C379C6E4FB487E5ABD6800AD7B7E /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79A89AD5798E004C48569E7DB39F895 /* DispatchQueue+Alamofire.swift */; };
+		D65C254F5ABF2CB5ECEE50FE8F8E1A80 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = D934BBEE23FCE49A68D81138F8C91EF3 /* Response.swift */; };
+		E051477E5E07AF6F2DAB9CBF685AD078 /* APIRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB362669DF78D5FB1BBD714FBD63C393 /* APIRoute.swift */; };
+		E3747EC31FCCA97D75A81FC700CF7E24 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C430DCA2626B138B6B980FB0502B22D5 /* ResponseSerialization.swift */; };
+		E49C725F17BC763FA5D0422863FF83BB /* LyftButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE78753AD0150DB36AFEAC7DFC4929B /* LyftButton.swift */; };
+		E4B2585E47A557492EC1A8E8FBF3F496 /* RideType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB356EC7B0732E2F3EB3CA718ACC2D0F /* RideType.swift */; };
+		E9D9719B7AECDED07B0281E7D13E9CE0 /* Pods-frolic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DFA4509EE409BDBB9650369A1F30CB0 /* Pods-frolic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE5C6C87FB1D2FE982014E044A6AB24 /* LyftButtonNone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F9E0A49C7302188424E2B7817CF6743 /* LyftButtonNone.xib */; };
+		F13F2AA7F2E6D95A181CAB99B900D531 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6DCB3DF4DE5BA5A9107C29427D15D3 /* ServerTrustPolicy.swift */; };
 		F5CACFE8063B88DF95B5BE2B1C9881DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		F74EE380CE8084795A1E42FFBF43E414 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAF5C551E62D99B15C35CC8D2497BE8 /* Bundle+Extension.swift */; };
-		F8CE95DADA554A619BCB0DD08AAF9E18 /* Pods-frolic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 659C2CC81C6A5636D325558887680D38 /* Pods-frolic-dummy.m */; };
-		F95C18514190B5CA07A9DE92CB4774B1 /* RideKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385F84D76EF551C2B4EB984DDEF68EA4 /* RideKind.swift */; };
+		F74EE380CE8084795A1E42FFBF43E414 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D774BA0B1A0885A538CAB9D4F2A2563 /* Bundle+Extension.swift */; };
+		F7B74645E07C39771156A1FA413B98D4 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C301E142C4310FA22E33ED6E8F56C7BA /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F95C18514190B5CA07A9DE92CB4774B1 /* RideKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFD4D70A840A34BB7ACF993FCC7C7BB /* RideKind.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2768F272975347CA22E090226BA62025 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D118A6A04828FD3CDA8640CD2B6796D2;
-			remoteInfo = SwiftyJSON;
-		};
-		EBCE2926D7A230DA54181768F57C6004 /* PBXContainerItemProxy */ = {
+		3864646FCB08AE6AC58DD24B0AE2B23F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 774F35FC64A64D786FAEEA976DBDFCEF;
 			remoteInfo = LyftSDK;
 		};
-		FF7BDFC4793F2B7A9D615DC0B2633FA4 /* PBXContainerItemProxy */ = {
+		655B3C90B096C6D66479AE84CD3EDDE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D118A6A04828FD3CDA8640CD2B6796D2;
+			remoteInfo = SwiftyJSON;
+		};
+		9AEAAF0058097122CB356BE295AA0DE9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E5B4BBC6DD552AC8943C7E22772FC1D3;
 			remoteInfo = GoogleMaps;
 		};
+		A09E0695AD823454FF0CDFBABC6AFF35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00D5702873787B4BF96F9427A5322F51 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		088262013DCC07C746D84689E8C9625D /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		0982BF93F2590A5621DE8FBF67FCAFC5 /* LyftAPIError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LyftAPIError.swift; path = Sources/LyftAPI/LyftAPIError.swift; sourceTree = "<group>"; };
 		09B19F11B27616378E56F134E2F51175 /* Pods-frolic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-frolic.debug.xcconfig"; sourceTree = "<group>"; };
-		0CAD2BAB608673AC36026174724A2602 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
-		0E559A2BB45DB51DF7F9703F57B7D394 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		0D794EC93CA712ADCB2741081BEDED3A /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Sources/LyftUI/Resources/Images.xcassets; sourceTree = "<group>"; };
+		0F57A6E2791FD5A2553BAE1535A8EB2C /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		10C5B08D8A4308A54581F19002398DAC /* LyftButtonFull.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LyftButtonFull.xib; path = Sources/LyftUI/Resources/LyftButtonFull.xib; sourceTree = "<group>"; };
+		10FABD33CF4F56FE155A49E03AC8B218 /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
+		1826D85DDAD2AD42EC6B1973F952CF8D /* LyftAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LyftAPI.swift; path = Sources/LyftAPI/LyftAPI.swift; sourceTree = "<group>"; };
 		1E86583C337D506D90A9E5320B185F70 /* Pods-frolic.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-frolic.modulemap"; sourceTree = "<group>"; };
-		1F3F50AEA29A08AFAF047F0A783E6D36 /* I18N.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = I18N.swift; path = Sources/LyftUI/I18N.swift; sourceTree = "<group>"; };
-		27066FDB2DC1FF607A86854361978340 /* UIColor+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Extension.swift"; path = "Sources/LyftUI/UIColor+Extension.swift"; sourceTree = "<group>"; };
+		1F71752EE3D92E81AA9366F1D88B5719 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		203D8A9775AC954DE75014353E2DC9D7 /* SwiftyJSON-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftyJSON-Info.plist"; sourceTree = "<group>"; };
+		2440D85B3674E98170C9A63B7189312E /* URL+StaticString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URL+StaticString.swift"; path = "Sources/LyftAPI/URL+StaticString.swift"; sourceTree = "<group>"; };
+		26643DBF1DCFECBB4E30814946BB96E1 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		27B8B8A44F2DC6F1A170348A1321748A /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		2A36E59F32FDC4AF5DAF16A6BD3A2E96 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = Sources/LyftUI/Resources/en.lproj; sourceTree = "<group>"; };
+		2D6DCB3DF4DE5BA5A9107C29427D15D3 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		2E4F04FE830D9AD0E8DED127B77367A1 /* Cost.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cost.swift; path = Sources/LyftModels/Cost.swift; sourceTree = "<group>"; };
+		2F64CA3BAFEC4FA53DC98FE7FF0F211F /* GoogleMaps.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.xcconfig; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		362B999C2D0220136433377E93F1ABEE /* LyftSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LyftSDK.modulemap; sourceTree = "<group>"; };
-		385F84D76EF551C2B4EB984DDEF68EA4 /* RideKind.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RideKind.swift; path = Sources/LyftModels/RideKind.swift; sourceTree = "<group>"; };
-		39A9C9FD1C4576B972A6D8A1C760C725 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		36AE3D0AD26737061826047432666C9C /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		3A5C8227361B68CCB77FE1F83A53F67E /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
 		3AF69C9DA9555120B2E86435DF816822 /* Pods-frolic-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frolic-frameworks.sh"; sourceTree = "<group>"; };
-		3F2C98B703142C1F47BFA89AD92AB1F5 /* Cost.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cost.swift; path = Sources/LyftModels/Cost.swift; sourceTree = "<group>"; };
+		3F9E0A49C7302188424E2B7817CF6743 /* LyftButtonNone.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LyftButtonNone.xib; path = Sources/LyftUI/Resources/LyftButtonNone.xib; sourceTree = "<group>"; };
 		44D6AF55DAC2624C3B689AB60F3AE498 /* Pods_frolic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_frolic.framework; path = "Pods-frolic.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		474F4F37C252D2BDBA02CF9769F46FDB /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
-		50748934AD22FD51F8E868C5806A78A8 /* PricingDetails.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PricingDetails.swift; path = Sources/LyftModels/PricingDetails.swift; sourceTree = "<group>"; };
-		51C73B4DC432C191C8B80792AA2AEF45 /* LyftButtonNone.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LyftButtonNone.xib; path = Sources/LyftUI/Resources/LyftButtonNone.xib; sourceTree = "<group>"; };
+		45019E86B3F9A1C01721E71C3CEEB111 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		4693BF540307A7EA50241F24C4F373B7 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		4EE78753AD0150DB36AFEAC7DFC4929B /* LyftButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LyftButton.swift; path = Sources/LyftUI/LyftButton.swift; sourceTree = "<group>"; };
 		54F0BDB9F661AD2FDE109A06B4FF85C0 /* LyftSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LyftSDK.framework; path = LyftSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		567D881CD3910DEEF40BBDCEF73D96D4 /* JSONMappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONMappable.swift; path = Sources/LyftAPI/JSONMappable.swift; sourceTree = "<group>"; };
 		576E8110E2CD4ACD8A2449A51A2178A4 /* Pods-frolic-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-frolic-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5D774BA0B1A0885A538CAB9D4F2A2563 /* Bundle+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+Extension.swift"; path = "Sources/LyftAPI/Bundle+Extension.swift"; sourceTree = "<group>"; };
+		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DD2D3C0E2200076D7BE231241B5AC48 /* Button.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Button.swift; path = Sources/LyftUI/Button.swift; sourceTree = "<group>"; };
 		5DFA4509EE409BDBB9650369A1F30CB0 /* Pods-frolic-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-frolic-umbrella.h"; sourceTree = "<group>"; };
-		61935B1912BA2AAF3A6F0805F1DADF8F /* LyftDeepLink.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LyftDeepLink.swift; path = Sources/LyftUI/LyftDeepLink.swift; sourceTree = "<group>"; };
+		5F05887A1923C376D11898D0F4602566 /* Safari.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Safari.swift; path = Sources/LyftUI/Safari.swift; sourceTree = "<group>"; };
 		659C2CC81C6A5636D325558887680D38 /* Pods-frolic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-frolic-dummy.m"; sourceTree = "<group>"; };
-		762A283DEE0439F204FEB0FA82591953 /* LyftButtonRideTypeETA.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LyftButtonRideTypeETA.xib; path = Sources/LyftUI/Resources/LyftButtonRideTypeETA.xib; sourceTree = "<group>"; };
-		7668D5964D6428430FE1289806EFD318 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON/SwiftyJSON.swift; sourceTree = "<group>"; };
-		78A81C838EB0886A68461705566539B9 /* LyftButtonStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LyftButtonStyle.swift; path = Sources/LyftUI/LyftButtonStyle.swift; sourceTree = "<group>"; };
-		7B0E5BA3710124824CFAF7238ACA2A4F /* LyftAPIError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LyftAPIError.swift; path = Sources/LyftAPI/LyftAPIError.swift; sourceTree = "<group>"; };
-		7E66DE25A0CF30A85A4A9C7430D9F133 /* LyftAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LyftAPI.swift; path = Sources/LyftAPI/LyftAPI.swift; sourceTree = "<group>"; };
-		7F7839B77F18AA1768A53BA60EEADF02 /* HTTPClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPClient.swift; path = Sources/LyftAPI/HTTPClient.swift; sourceTree = "<group>"; };
-		81CE184D001CFDE2DA712FAF0E0E19FD /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = Sources/LyftUI/Resources/en.lproj; sourceTree = "<group>"; };
-		8239860837AAF20EB7631E02360C078D /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Sources/LyftAPI/Result.swift; sourceTree = "<group>"; };
-		83B635018C55B4F6A1041C9EECB29324 /* LyftSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LyftSDK-Info.plist"; sourceTree = "<group>"; };
-		8A5920BBE6E69EAA1CAAA301961C152A /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Sources/LyftUI/Resources/Images.xcassets; sourceTree = "<group>"; };
+		65E9AEC166A93EFD228EEE49BBE87DE9 /* HTTPClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPClient.swift; path = Sources/LyftAPI/HTTPClient.swift; sourceTree = "<group>"; };
+		67B6375AC0FD56F6E3B2A9198CBA8A6F /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		6F65A65369AD9488F5002640C12AA67C /* CLLocationCoordinate2D+JSONMappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CLLocationCoordinate2D+JSONMappable.swift"; path = "Sources/LyftModels/CLLocationCoordinate2D+JSONMappable.swift"; sourceTree = "<group>"; };
+		77276E1C1A0C0F0361C29102E2272C72 /* LyftAPIURLEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LyftAPIURLEncoding.swift; path = Sources/LyftAPI/LyftAPIURLEncoding.swift; sourceTree = "<group>"; };
+		774FBB700AF04E943ECA1B1F946D1C9C /* LyftSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LyftSDK-dummy.m"; sourceTree = "<group>"; };
+		7D1917C2E2AC7D43942F90FBE1D7F758 /* NearbyDriver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NearbyDriver.swift; path = Sources/LyftModels/NearbyDriver.swift; sourceTree = "<group>"; };
+		836DC04F86E092082F97C7CF4799AC2B /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		83B7779B60D96075E74C537DEBFB4BD1 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		88DADA5947EFDCD1AA0D52830BB02E90 /* LyftButtonRideTypeETA.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LyftButtonRideTypeETA.xib; path = Sources/LyftUI/Resources/LyftButtonRideTypeETA.xib; sourceTree = "<group>"; };
+		89C1B3B86ED291066E69AB4AEA366056 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		93ACF0DAE7A3E5652019EB5DB2680F7D /* I18N.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = I18N.swift; path = Sources/LyftUI/I18N.swift; sourceTree = "<group>"; };
+		9BC76500C92D250EBADC1B85E42B1B58 /* LyftSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LyftSDK-Info.plist"; sourceTree = "<group>"; };
+		9CA463F4362BC5D76527EC41BBC1E163 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		9CC4F78798BA40AF660C8611A8C9E06F /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A3618E6BC277D1E47967ED42ADCFCDBA /* LyftAPIURLEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LyftAPIURLEncoding.swift; path = Sources/LyftAPI/LyftAPIURLEncoding.swift; sourceTree = "<group>"; };
+		9DFD4D70A840A34BB7ACF993FCC7C7BB /* RideKind.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RideKind.swift; path = Sources/LyftModels/RideKind.swift; sourceTree = "<group>"; };
+		A18D8C79C9F353EC2121002FB72A46FA /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON/SwiftyJSON.swift; sourceTree = "<group>"; };
+		A274FDC5349B21C8ACADF5AE6DEDAEA9 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
 		A3AD6581F5B241CA199A30C4A78159A8 /* Pods-frolic-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-frolic-Info.plist"; sourceTree = "<group>"; };
-		A3F37DD8790262CFB3EDC73955CF3F5B /* APIRoute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIRoute.swift; path = Sources/LyftAPI/APIRoute.swift; sourceTree = "<group>"; };
-		A3F96C6B3B78516ECCB18D9475EB7B31 /* LyftSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LyftSDK-umbrella.h"; sourceTree = "<group>"; };
-		A7DCE7BF7FA3EEC58577CE2E0D873AD7 /* SwiftyJSON-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftyJSON-Info.plist"; sourceTree = "<group>"; };
-		ACDE79F4898D467D383989628A03DD0D /* LyftButtonFull.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LyftButtonFull.xib; path = Sources/LyftUI/Resources/LyftButtonFull.xib; sourceTree = "<group>"; };
+		A6E0BC7A624395DDB308316550775B3A /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		AAD4D53F769FF4A4F863B88C6AEBED56 /* LyftDeepLink.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LyftDeepLink.swift; path = Sources/LyftUI/LyftDeepLink.swift; sourceTree = "<group>"; };
+		AB362669DF78D5FB1BBD714FBD63C393 /* APIRoute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIRoute.swift; path = Sources/LyftAPI/APIRoute.swift; sourceTree = "<group>"; };
+		ABBA8248D740535588CE6D8BD7F9E1E5 /* UIColor+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Extension.swift"; path = "Sources/LyftUI/UIColor+Extension.swift"; sourceTree = "<group>"; };
 		ADB4CFDD01135DF617B715C4A45C1F25 /* Pods-frolic-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-frolic-acknowledgements.plist"; sourceTree = "<group>"; };
-		ADC6502A5618BDB1A631A2C0B3F08DEE /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
-		AE266FB4C405B1528D8DD6D9119FD9A9 /* Asset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Asset.swift; path = Sources/LyftUI/Asset.swift; sourceTree = "<group>"; };
-		AF0A836BA6CBE6B326D4FDC3A36F3ACC /* Money+UI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Money+UI.swift"; path = "Sources/LyftUI/Money+UI.swift"; sourceTree = "<group>"; };
-		B47A41EF659D609C0935DE55E9960709 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
-		B67594ADD9BCA29E4A963F8129452271 /* Button.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Button.swift; path = Sources/LyftUI/Button.swift; sourceTree = "<group>"; };
-		BB58F0EC57C28E484A184FDCA06CB18A /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
-		C1390AE34CDD90D93D368898863EFD9C /* CLLocationCoordinate2D+JSONMappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CLLocationCoordinate2D+JSONMappable.swift"; path = "Sources/LyftModels/CLLocationCoordinate2D+JSONMappable.swift"; sourceTree = "<group>"; };
-		C61C7E32CAC426BB501BDC702F839418 /* LyftSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LyftSDK-dummy.m"; sourceTree = "<group>"; };
-		CAFEFE14AD748A75F436A67576BAFC0D /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
-		CB1CDB1656AD7F9BF08B44468872106C /* Safari.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Safari.swift; path = Sources/LyftUI/Safari.swift; sourceTree = "<group>"; };
-		CBFFBA2D3CA7BB653E0B806B57B8AB64 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		B1E8990EF59D9A80F7D717B445E1666C /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		B536FA06A7465450FF9BD6F9260000C3 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		BB241F905F178514A74C698DF11BFFAF /* LyftSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LyftSDK.xcconfig; sourceTree = "<group>"; };
+		BC40ACD12024D2797C6B8E98520DE11A /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		BCC526237FB2ADAF0FE2673E94113A97 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		BDA32FE8D3EF69421E4F5AE24286B2FE /* LyftButtonStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LyftButtonStyle.swift; path = Sources/LyftUI/LyftButtonStyle.swift; sourceTree = "<group>"; };
+		BFF807F27BF0290F93E8EB98C550E408 /* JSONMappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONMappable.swift; path = Sources/LyftAPI/JSONMappable.swift; sourceTree = "<group>"; };
+		C301E142C4310FA22E33ED6E8F56C7BA /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		C430DCA2626B138B6B980FB0502B22D5 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		CC1BBA4DDAD28054055E7AFD191BBDA8 /* Money.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Money.swift; path = Sources/LyftModels/Money.swift; sourceTree = "<group>"; };
+		CC7199E9763316AFCB8E18C97FDBDD07 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		CD143235841B347DB6DFEF6B5467A713 /* Pods-frolic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-frolic.release.xcconfig"; sourceTree = "<group>"; };
-		CD289892B65DA56C082E5ED1FB0A5281 /* GoogleMaps.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.xcconfig; sourceTree = "<group>"; };
-		CD80D85A7BA519F543092C621170C350 /* Money.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Money.swift; path = Sources/LyftModels/Money.swift; sourceTree = "<group>"; };
-		CFAF5C551E62D99B15C35CC8D2497BE8 /* Bundle+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+Extension.swift"; path = "Sources/LyftAPI/Bundle+Extension.swift"; sourceTree = "<group>"; };
 		D316DA81DEC2345C61C12F45DCB41893 /* Pods-frolic-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frolic-resources.sh"; sourceTree = "<group>"; };
-		D39E4135D0BC28393A526AC5FC3B8430 /* LyftConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LyftConfiguration.swift; path = Sources/LyftAPI/LyftConfiguration.swift; sourceTree = "<group>"; };
-		DD86F9329AC7716EA2677B03718AB98D /* ETA.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ETA.swift; path = Sources/LyftModels/ETA.swift; sourceTree = "<group>"; };
+		D6200AE62065A54246A5E2AF8FDE9B5D /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		D934BBEE23FCE49A68D81138F8C91EF3 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		DB356EC7B0732E2F3EB3CA718ACC2D0F /* RideType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RideType.swift; path = Sources/LyftModels/RideType.swift; sourceTree = "<group>"; };
 		E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E25CDFD7584686707AE7ECCE981964D1 /* LyftSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LyftSDK-prefix.pch"; sourceTree = "<group>"; };
-		E587585C889ED59236B3BA3BB9A4FF25 /* URL+StaticString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URL+StaticString.swift"; path = "Sources/LyftAPI/URL+StaticString.swift"; sourceTree = "<group>"; };
-		EBBE13EEAD9F9CF80720C2D2C6837AE8 /* LyftSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LyftSDK.xcconfig; sourceTree = "<group>"; };
-		F686EC475F7448A791C6C6FBE5725C38 /* RideType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RideType.swift; path = Sources/LyftModels/RideType.swift; sourceTree = "<group>"; };
-		FB175C88C85E9A295EDF36ABE50A91FD /* NearbyDriver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NearbyDriver.swift; path = Sources/LyftModels/NearbyDriver.swift; sourceTree = "<group>"; };
-		FCEF284D29E039F58706D07B6169663D /* LyftButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LyftButton.swift; path = Sources/LyftUI/LyftButton.swift; sourceTree = "<group>"; };
+		E332E21E44A4535A12094828E1CB1D4E /* LyftSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LyftSDK.modulemap; sourceTree = "<group>"; };
+		E4684697D762939693764015042FEF7C /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		E79A89AD5798E004C48569E7DB39F895 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		ECD243E0EB1794E06E24148D89523FDD /* ETA.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ETA.swift; path = Sources/LyftModels/ETA.swift; sourceTree = "<group>"; };
+		EEC31FF0DDBCC2EB47A3D15063326880 /* LyftSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LyftSDK-umbrella.h"; sourceTree = "<group>"; };
+		EF2DB37587CF9131CCC10787E114595B /* LyftConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LyftConfiguration.swift; path = Sources/LyftAPI/LyftConfiguration.swift; sourceTree = "<group>"; };
+		F5B5E8E4BDD4F7BBA20B7B8152CB8652 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		F824EE8904CA439A85D9DF87B1E8B8B7 /* Money+UI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Money+UI.swift"; path = "Sources/LyftUI/Money+UI.swift"; sourceTree = "<group>"; };
+		F910003429BAEA989573E5909D1E4BA1 /* Asset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Asset.swift; path = Sources/LyftUI/Asset.swift; sourceTree = "<group>"; };
+		FA3C9635B434F82B716594A1CF789F83 /* PricingDetails.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PricingDetails.swift; path = Sources/LyftModels/PricingDetails.swift; sourceTree = "<group>"; };
+		FC0783E681516C49B6E9D0D2F84304E8 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Sources/LyftAPI/Result.swift; sourceTree = "<group>"; };
+		FF460F1E2523AC6D69EBDD3429FEEE41 /* LyftSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LyftSDK-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A7E03E05F7BA8E8955AB159181F5EF5F /* Frameworks */ = {
+		090C1D63463ACF622287EFF9D5C9392D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3291BEDEA00268F88378AEE4D64AC460 /* Foundation.framework in Frameworks */,
+				7664FD4F59A0C00866CBAE60B0A3AD64 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		412EBD98B2D663205001D5CE6EF4AB33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40F4B6EFD3F43AFF6F1D52AA68A04A30 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,35 +242,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		05CE2C1398E12D491547B0AB50BB6DCB /* Support Files */ = {
+		092394B11730DCA7396CE3224988B5A0 /* LyftSDK */ = {
 			isa = PBXGroup;
 			children = (
-				BB58F0EC57C28E484A184FDCA06CB18A /* SwiftyJSON.modulemap */,
-				CBFFBA2D3CA7BB653E0B806B57B8AB64 /* SwiftyJSON.xcconfig */,
-				474F4F37C252D2BDBA02CF9769F46FDB /* SwiftyJSON-dummy.m */,
-				A7DCE7BF7FA3EEC58577CE2E0D873AD7 /* SwiftyJSON-Info.plist */,
-				CAFEFE14AD748A75F436A67576BAFC0D /* SwiftyJSON-prefix.pch */,
-				0CAD2BAB608673AC36026174724A2602 /* SwiftyJSON-umbrella.h */,
+				093825E79ABD705D73CE483C6F6E0851 /* Core */,
+				EF4DB7B56FFC462480DEB6FB8319DCF7 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftyJSON";
+			name = LyftSDK;
+			path = LyftSDK;
 			sourceTree = "<group>";
 		};
-		0A7177E35202EAA07A21E017560FFDEE /* Resources */ = {
+		093825E79ABD705D73CE483C6F6E0851 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				0E559A2BB45DB51DF7F9703F57B7D394 /* GoogleMaps.bundle */,
+				AB362669DF78D5FB1BBD714FBD63C393 /* APIRoute.swift */,
+				F910003429BAEA989573E5909D1E4BA1 /* Asset.swift */,
+				5D774BA0B1A0885A538CAB9D4F2A2563 /* Bundle+Extension.swift */,
+				5DD2D3C0E2200076D7BE231241B5AC48 /* Button.swift */,
+				6F65A65369AD9488F5002640C12AA67C /* CLLocationCoordinate2D+JSONMappable.swift */,
+				2E4F04FE830D9AD0E8DED127B77367A1 /* Cost.swift */,
+				ECD243E0EB1794E06E24148D89523FDD /* ETA.swift */,
+				65E9AEC166A93EFD228EEE49BBE87DE9 /* HTTPClient.swift */,
+				93ACF0DAE7A3E5652019EB5DB2680F7D /* I18N.swift */,
+				BFF807F27BF0290F93E8EB98C550E408 /* JSONMappable.swift */,
+				1826D85DDAD2AD42EC6B1973F952CF8D /* LyftAPI.swift */,
+				0982BF93F2590A5621DE8FBF67FCAFC5 /* LyftAPIError.swift */,
+				77276E1C1A0C0F0361C29102E2272C72 /* LyftAPIURLEncoding.swift */,
+				4EE78753AD0150DB36AFEAC7DFC4929B /* LyftButton.swift */,
+				BDA32FE8D3EF69421E4F5AE24286B2FE /* LyftButtonStyle.swift */,
+				EF2DB37587CF9131CCC10787E114595B /* LyftConfiguration.swift */,
+				AAD4D53F769FF4A4F863B88C6AEBED56 /* LyftDeepLink.swift */,
+				CC1BBA4DDAD28054055E7AFD191BBDA8 /* Money.swift */,
+				F824EE8904CA439A85D9DF87B1E8B8B7 /* Money+UI.swift */,
+				7D1917C2E2AC7D43942F90FBE1D7F758 /* NearbyDriver.swift */,
+				FA3C9635B434F82B716594A1CF789F83 /* PricingDetails.swift */,
+				FC0783E681516C49B6E9D0D2F84304E8 /* Result.swift */,
+				9DFD4D70A840A34BB7ACF993FCC7C7BB /* RideKind.swift */,
+				DB356EC7B0732E2F3EB3CA718ACC2D0F /* RideType.swift */,
+				5F05887A1923C376D11898D0F4602566 /* Safari.swift */,
+				ABBA8248D740535588CE6D8BD7F9E1E5 /* UIColor+Extension.swift */,
+				2440D85B3674E98170C9A63B7189312E /* URL+StaticString.swift */,
+				6A83BB499F28AC3FBA1C57075220D356 /* Resources */,
 			);
-			name = Resources;
+			name = Core;
 			sourceTree = "<group>";
 		};
-		0ABE6C97A71CA7ADE3714245BB86D81C /* Maps */ = {
+		13EDFD440C3F6FA053036161E2C76D69 /* SwiftyJSON */ = {
 			isa = PBXGroup;
 			children = (
-				9E2A0D3401A36C61D55C521BB07F5046 /* Frameworks */,
-				0A7177E35202EAA07A21E017560FFDEE /* Resources */,
+				A18D8C79C9F353EC2121002FB72A46FA /* SwiftyJSON.swift */,
+				57FFFD1ADAB568BA8F50031936838A91 /* Support Files */,
 			);
-			name = Maps;
+			name = SwiftyJSON;
+			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
 		1D0F81D8EAA9A16C39988AFF0338AFED /* Pods-frolic */ = {
@@ -232,58 +315,58 @@
 			path = "Target Support Files/Pods-frolic";
 			sourceTree = "<group>";
 		};
-		273016CCE992E8F4796D6BF9820E03BA /* Support Files */ = {
+		2FB0CAA6865E01C8F47F13634122B2AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				362B999C2D0220136433377E93F1ABEE /* LyftSDK.modulemap */,
-				EBBE13EEAD9F9CF80720C2D2C6837AE8 /* LyftSDK.xcconfig */,
-				C61C7E32CAC426BB501BDC702F839418 /* LyftSDK-dummy.m */,
-				83B635018C55B4F6A1041C9EECB29324 /* LyftSDK-Info.plist */,
-				E25CDFD7584686707AE7ECCE981964D1 /* LyftSDK-prefix.pch */,
-				A3F96C6B3B78516ECCB18D9475EB7B31 /* LyftSDK-umbrella.h */,
+				1F71752EE3D92E81AA9366F1D88B5719 /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		44BB2BFC0C8F07EDC746482A2779CF2A /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				B1E8990EF59D9A80F7D717B445E1666C /* AFError.swift */,
+				0F57A6E2791FD5A2553BAE1535A8EB2C /* Alamofire.swift */,
+				E79A89AD5798E004C48569E7DB39F895 /* DispatchQueue+Alamofire.swift */,
+				CC7199E9763316AFCB8E18C97FDBDD07 /* MultipartFormData.swift */,
+				836DC04F86E092082F97C7CF4799AC2B /* NetworkReachabilityManager.swift */,
+				45019E86B3F9A1C01721E71C3CEEB111 /* Notifications.swift */,
+				26643DBF1DCFECBB4E30814946BB96E1 /* ParameterEncoding.swift */,
+				088262013DCC07C746D84689E8C9625D /* Request.swift */,
+				D934BBEE23FCE49A68D81138F8C91EF3 /* Response.swift */,
+				C430DCA2626B138B6B980FB0502B22D5 /* ResponseSerialization.swift */,
+				27B8B8A44F2DC6F1A170348A1321748A /* Result.swift */,
+				2D6DCB3DF4DE5BA5A9107C29427D15D3 /* ServerTrustPolicy.swift */,
+				B536FA06A7465450FF9BD6F9260000C3 /* SessionDelegate.swift */,
+				36AE3D0AD26737061826047432666C9C /* SessionManager.swift */,
+				00D5702873787B4BF96F9427A5322F51 /* TaskDelegate.swift */,
+				4693BF540307A7EA50241F24C4F373B7 /* Timeline.swift */,
+				67B6375AC0FD56F6E3B2A9198CBA8A6F /* Validation.swift */,
+				C0AF5E5A5BFBAAE066C716150ED58B12 /* Support Files */,
+			);
+			name = Alamofire;
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		57FFFD1ADAB568BA8F50031936838A91 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				89C1B3B86ED291066E69AB4AEA366056 /* SwiftyJSON.modulemap */,
+				9CA463F4362BC5D76527EC41BBC1E163 /* SwiftyJSON.xcconfig */,
+				3A5C8227361B68CCB77FE1F83A53F67E /* SwiftyJSON-dummy.m */,
+				203D8A9775AC954DE75014353E2DC9D7 /* SwiftyJSON-Info.plist */,
+				BC40ACD12024D2797C6B8E98520DE11A /* SwiftyJSON-prefix.pch */,
+				83B7779B60D96075E74C537DEBFB4BD1 /* SwiftyJSON-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/LyftSDK";
+			path = "../Target Support Files/SwiftyJSON";
 			sourceTree = "<group>";
 		};
-		386BEC51921406A947C5E7E6353C6DBE /* Core */ = {
+		61605218A085DED7552C47978343EE76 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A3F37DD8790262CFB3EDC73955CF3F5B /* APIRoute.swift */,
-				AE266FB4C405B1528D8DD6D9119FD9A9 /* Asset.swift */,
-				CFAF5C551E62D99B15C35CC8D2497BE8 /* Bundle+Extension.swift */,
-				B67594ADD9BCA29E4A963F8129452271 /* Button.swift */,
-				C1390AE34CDD90D93D368898863EFD9C /* CLLocationCoordinate2D+JSONMappable.swift */,
-				3F2C98B703142C1F47BFA89AD92AB1F5 /* Cost.swift */,
-				DD86F9329AC7716EA2677B03718AB98D /* ETA.swift */,
-				7F7839B77F18AA1768A53BA60EEADF02 /* HTTPClient.swift */,
-				1F3F50AEA29A08AFAF047F0A783E6D36 /* I18N.swift */,
-				567D881CD3910DEEF40BBDCEF73D96D4 /* JSONMappable.swift */,
-				7E66DE25A0CF30A85A4A9C7430D9F133 /* LyftAPI.swift */,
-				7B0E5BA3710124824CFAF7238ACA2A4F /* LyftAPIError.swift */,
-				A3618E6BC277D1E47967ED42ADCFCDBA /* LyftAPIURLEncoding.swift */,
-				FCEF284D29E039F58706D07B6169663D /* LyftButton.swift */,
-				78A81C838EB0886A68461705566539B9 /* LyftButtonStyle.swift */,
-				D39E4135D0BC28393A526AC5FC3B8430 /* LyftConfiguration.swift */,
-				61935B1912BA2AAF3A6F0805F1DADF8F /* LyftDeepLink.swift */,
-				CD80D85A7BA519F543092C621170C350 /* Money.swift */,
-				AF0A836BA6CBE6B326D4FDC3A36F3ACC /* Money+UI.swift */,
-				FB175C88C85E9A295EDF36ABE50A91FD /* NearbyDriver.swift */,
-				50748934AD22FD51F8E868C5806A78A8 /* PricingDetails.swift */,
-				8239860837AAF20EB7631E02360C078D /* Result.swift */,
-				385F84D76EF551C2B4EB984DDEF68EA4 /* RideKind.swift */,
-				F686EC475F7448A791C6C6FBE5725C38 /* RideType.swift */,
-				CB1CDB1656AD7F9BF08B44468872106C /* Safari.swift */,
-				27066FDB2DC1FF607A86854361978340 /* UIColor+Extension.swift */,
-				E587585C889ED59236B3BA3BB9A4FF25 /* URL+StaticString.swift */,
-				B08BF2F714852270017E77B22A6BC90C /* Resources */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		677C0695DC2ACF897BA6AEFE3EE48961 /* Products */ = {
-			isa = PBXGroup;
-			children = (
+				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */,
 				54F0BDB9F661AD2FDE109A06B4FF85C0 /* LyftSDK.framework */,
 				44D6AF55DAC2624C3B689AB60F3AE498 /* Pods_frolic.framework */,
 				E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON.framework */,
@@ -291,40 +374,47 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8161EA6F0CEC8D82F74A4491A4A29B4D /* Frameworks */ = {
+		6A83BB499F28AC3FBA1C57075220D356 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				39A9C9FD1C4576B972A6D8A1C760C725 /* GoogleMapsBase.framework */,
+				2A36E59F32FDC4AF5DAF16A6BD3A2E96 /* en.lproj */,
+				0D794EC93CA712ADCB2741081BEDED3A /* Images.xcassets */,
+				10C5B08D8A4308A54581F19002398DAC /* LyftButtonFull.xib */,
+				3F9E0A49C7302188424E2B7817CF6743 /* LyftButtonNone.xib */,
+				88DADA5947EFDCD1AA0D52830BB02E90 /* LyftButtonRideTypeETA.xib */,
 			);
-			name = Frameworks;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		8A7445896968B7D5D7721BD85EF30C2C /* GoogleMaps */ = {
+		944CFCBF96232F4E893F52A964FEF947 /* Maps */ = {
 			isa = PBXGroup;
 			children = (
-				AB856DE013A0EADE09EC6877203F3477 /* Base */,
-				0ABE6C97A71CA7ADE3714245BB86D81C /* Maps */,
-				D426244E95517638BB038134A4D13E83 /* Support Files */,
+				E842607D4DBB6C4C0F66BDE8368F819D /* Frameworks */,
+				2FB0CAA6865E01C8F47F13634122B2AE /* Resources */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		A5A04C5C2EAC5FD947E22762AFE2616C /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				CEB20DB7D0BED1D1255D36B4A11AC40E /* Base */,
+				944CFCBF96232F4E893F52A964FEF947 /* Maps */,
+				C0806B2787CE42E7A6A7DA443BF29330 /* Support Files */,
 			);
 			name = GoogleMaps;
 			path = GoogleMaps;
 			sourceTree = "<group>";
 		};
-		9E2A0D3401A36C61D55C521BB07F5046 /* Frameworks */ = {
+		ABD48B6DC127B44055552EEB6488B987 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				ADC6502A5618BDB1A631A2C0B3F08DEE /* GoogleMaps.framework */,
-				B47A41EF659D609C0935DE55E9960709 /* GoogleMapsCore.framework */,
+				44BB2BFC0C8F07EDC746482A2779CF2A /* Alamofire */,
+				A5A04C5C2EAC5FD947E22762AFE2616C /* GoogleMaps */,
+				092394B11730DCA7396CE3224988B5A0 /* LyftSDK */,
+				13EDFD440C3F6FA053036161E2C76D69 /* SwiftyJSON */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		AB856DE013A0EADE09EC6877203F3477 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				8161EA6F0CEC8D82F74A4491A4A29B4D /* Frameworks */,
-			);
-			name = Base;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		ACA1E77AD5D24E0260B0E0A0FBA6A61E /* Targets Support Files */ = {
@@ -335,16 +425,13 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		B08BF2F714852270017E77B22A6BC90C /* Resources */ = {
+		C0806B2787CE42E7A6A7DA443BF29330 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				81CE184D001CFDE2DA712FAF0E0E19FD /* en.lproj */,
-				8A5920BBE6E69EAA1CAAA301961C152A /* Images.xcassets */,
-				ACDE79F4898D467D383989628A03DD0D /* LyftButtonFull.xib */,
-				51C73B4DC432C191C8B80792AA2AEF45 /* LyftButtonNone.xib */,
-				762A283DEE0439F204FEB0FA82591953 /* LyftButtonRideTypeETA.xib */,
+				2F64CA3BAFEC4FA53DC98FE7FF0F211F /* GoogleMaps.xcconfig */,
 			);
-			name = Resources;
+			name = "Support Files";
+			path = "../Target Support Files/GoogleMaps";
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -355,24 +442,34 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		C24C70A7BB34A750CF66D630DFE41AEA /* Pods */ = {
+		C0AF5E5A5BFBAAE066C716150ED58B12 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				8A7445896968B7D5D7721BD85EF30C2C /* GoogleMaps */,
-				C620E8A3396B6EA140988F332E0B6312 /* LyftSDK */,
-				D1F55346292258F88B313C98FADF4932 /* SwiftyJSON */,
+				D6200AE62065A54246A5E2AF8FDE9B5D /* Alamofire.modulemap */,
+				A6E0BC7A624395DDB308316550775B3A /* Alamofire.xcconfig */,
+				F5B5E8E4BDD4F7BBA20B7B8152CB8652 /* Alamofire-dummy.m */,
+				10FABD33CF4F56FE155A49E03AC8B218 /* Alamofire-Info.plist */,
+				9CC4F78798BA40AF660C8611A8C9E06F /* Alamofire-prefix.pch */,
+				C301E142C4310FA22E33ED6E8F56C7BA /* Alamofire-umbrella.h */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
 			sourceTree = "<group>";
 		};
-		C620E8A3396B6EA140988F332E0B6312 /* LyftSDK */ = {
+		C3D481B2DE0DF82BE0826064B2B54CF5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				386BEC51921406A947C5E7E6353C6DBE /* Core */,
-				273016CCE992E8F4796D6BF9820E03BA /* Support Files */,
+				BCC526237FB2ADAF0FE2673E94113A97 /* GoogleMapsBase.framework */,
 			);
-			name = LyftSDK;
-			path = LyftSDK;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEB20DB7D0BED1D1255D36B4A11AC40E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C3D481B2DE0DF82BE0826064B2B54CF5 /* Frameworks */,
+			);
+			name = Base;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -380,20 +477,10 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				C24C70A7BB34A750CF66D630DFE41AEA /* Pods */,
-				677C0695DC2ACF897BA6AEFE3EE48961 /* Products */,
+				ABD48B6DC127B44055552EEB6488B987 /* Pods */,
+				61605218A085DED7552C47978343EE76 /* Products */,
 				ACA1E77AD5D24E0260B0E0A0FBA6A61E /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D1F55346292258F88B313C98FADF4932 /* SwiftyJSON */ = {
-			isa = PBXGroup;
-			children = (
-				7668D5964D6428430FE1289806EFD318 /* SwiftyJSON.swift */,
-				05CE2C1398E12D491547B0AB50BB6DCB /* Support Files */,
-			);
-			name = SwiftyJSON;
-			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -404,18 +491,40 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D426244E95517638BB038134A4D13E83 /* Support Files */ = {
+		E842607D4DBB6C4C0F66BDE8368F819D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CD289892B65DA56C082E5ED1FB0A5281 /* GoogleMaps.xcconfig */,
+				A274FDC5349B21C8ACADF5AE6DEDAEA9 /* GoogleMaps.framework */,
+				E4684697D762939693764015042FEF7C /* GoogleMapsCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF4DB7B56FFC462480DEB6FB8319DCF7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E332E21E44A4535A12094828E1CB1D4E /* LyftSDK.modulemap */,
+				BB241F905F178514A74C698DF11BFFAF /* LyftSDK.xcconfig */,
+				774FBB700AF04E943ECA1B1F946D1C9C /* LyftSDK-dummy.m */,
+				9BC76500C92D250EBADC1B85E42B1B58 /* LyftSDK-Info.plist */,
+				FF460F1E2523AC6D69EBDD3429FEEE41 /* LyftSDK-prefix.pch */,
+				EEC31FF0DDBCC2EB47A3D15063326880 /* LyftSDK-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/GoogleMaps";
+			path = "../Target Support Files/LyftSDK";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		2582784E4FA6A1AC5D23FC53AC3F6EE2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7B74645E07C39771156A1FA413B98D4 /* Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3517D1ED6715561EFB072EB30DABC899 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -432,11 +541,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8E51D8D39CAA99C0A2E055FF9544BE4F /* Headers */ = {
+		6405E0EFD8DF92CE9E7629006A2DCCAB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C2F99825FCC1A39B08F656C84EAEB8F /* Pods-frolic-umbrella.h in Headers */,
+				E9D9719B7AECDED07B0281E7D13E9CE0 /* Pods-frolic-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,19 +554,20 @@
 /* Begin PBXNativeTarget section */
 		720AF0BC4A6D6D1BCB8B9365B0E18FA7 /* Pods-frolic */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F0F2F7B9EA9954D94333BE362C466D83 /* Build configuration list for PBXNativeTarget "Pods-frolic" */;
+			buildConfigurationList = EFCB7A50DD780C0F4643C2DB3848ECAE /* Build configuration list for PBXNativeTarget "Pods-frolic" */;
 			buildPhases = (
-				8E51D8D39CAA99C0A2E055FF9544BE4F /* Headers */,
-				0D182B9FB74A30F936305D209F0C58A3 /* Sources */,
-				A7E03E05F7BA8E8955AB159181F5EF5F /* Frameworks */,
-				3A13D13D7BBB991F959FEFEB9ABB6C41 /* Resources */,
+				6405E0EFD8DF92CE9E7629006A2DCCAB /* Headers */,
+				835FB1B3556DD1AC894DD4050C12767B /* Sources */,
+				412EBD98B2D663205001D5CE6EF4AB33 /* Frameworks */,
+				48D81FF0C881A862370C5288C1848F51 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AB2649F5C72278C293C4E1405BAF19C5 /* PBXTargetDependency */,
-				5CDF3FD61A1D45B7B08E67DC2D0D6DC9 /* PBXTargetDependency */,
-				605779F65B712B954A7435C1C285C71B /* PBXTargetDependency */,
+				FAA49FD710E6F1AB4F836958065854FB /* PBXTargetDependency */,
+				AB14E16FE089DC367E9A956976750C2F /* PBXTargetDependency */,
+				9152487C3257ED48FEAC6A2397AC853D /* PBXTargetDependency */,
+				C518C5B19FDB1514F0071C9173717418 /* PBXTargetDependency */,
 			);
 			name = "Pods-frolic";
 			productName = "Pods-frolic";
@@ -500,6 +610,24 @@
 			productReference = E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4A5194ABAF7A4780609E0E581DA6B54 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				2582784E4FA6A1AC5D23FC53AC3F6EE2 /* Headers */,
+				2DDFD9AC10F181CD7130BDF5F9E0502B /* Sources */,
+				090C1D63463ACF622287EFF9D5C9392D /* Frameworks */,
+				473D3E892ABB6C798CFF290644259B34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = 5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -510,7 +638,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -518,10 +646,11 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 677C0695DC2ACF897BA6AEFE3EE48961 /* Products */;
+			productRefGroup = 61605218A085DED7552C47978343EE76 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */,
 				E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */,
 				774F35FC64A64D786FAEEA976DBDFCEF /* LyftSDK */,
 				720AF0BC4A6D6D1BCB8B9365B0E18FA7 /* Pods-frolic */,
@@ -531,7 +660,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3A13D13D7BBB991F959FEFEB9ABB6C41 /* Resources */ = {
+		473D3E892ABB6C798CFF290644259B34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48D81FF0C881A862370C5288C1848F51 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -560,20 +696,45 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0D182B9FB74A30F936305D209F0C58A3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F8CE95DADA554A619BCB0DD08AAF9E18 /* Pods-frolic-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1700C451C98D9DCECBEDFC5E351C5A9E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2BF6FBC0A64BF107C5D64C61F1397770 /* SwiftyJSON-dummy.m in Sources */,
 				7B4CE5C84161E2BFE477F42DFD634382 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DDFD9AC10F181CD7130BDF5F9E0502B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83956E20859CDBBE7BC38ABADE0170FB /* AFError.swift in Sources */,
+				1945CD5D63A1C164AEAAA9A33E85571E /* Alamofire-dummy.m in Sources */,
+				BEE6B677416CA71C981D1D3F60B18C96 /* Alamofire.swift in Sources */,
+				D3D8C379C6E4FB487E5ABD6800AD7B7E /* DispatchQueue+Alamofire.swift in Sources */,
+				1986B50C74F1697EA43F68335C93CEB3 /* MultipartFormData.swift in Sources */,
+				3571F958A3907B3A806E62D50C2550D4 /* NetworkReachabilityManager.swift in Sources */,
+				132E0F619E4338E5D1B27E4C72076B3F /* Notifications.swift in Sources */,
+				0C5E11DE24DAA737704B355F5F2F3426 /* ParameterEncoding.swift in Sources */,
+				98A929C8E9012AB167672714FFD2113C /* Request.swift in Sources */,
+				D65C254F5ABF2CB5ECEE50FE8F8E1A80 /* Response.swift in Sources */,
+				E3747EC31FCCA97D75A81FC700CF7E24 /* ResponseSerialization.swift in Sources */,
+				64744C911253C3E01461FAD7C935C8D7 /* Result.swift in Sources */,
+				F13F2AA7F2E6D95A181CAB99B900D531 /* ServerTrustPolicy.swift in Sources */,
+				2C61B040BA6A9A7AE66C4D9BA26D5520 /* SessionDelegate.swift in Sources */,
+				931BBB8230A25161D5C37528A8F9FECF /* SessionManager.swift in Sources */,
+				AFC64B1097F7355FF423D6A73E9C7210 /* TaskDelegate.swift in Sources */,
+				933FDA5970AA525D6CB92BFEBA2BAB4A /* Timeline.swift in Sources */,
+				53791F5E5F07400F92CFDFC89A432305 /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		835FB1B3556DD1AC894DD4050C12767B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6896C9951F10EC2271934B0A1FFF96B1 /* Pods-frolic-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -615,116 +776,34 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5CDF3FD61A1D45B7B08E67DC2D0D6DC9 /* PBXTargetDependency */ = {
+		9152487C3257ED48FEAC6A2397AC853D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LyftSDK;
 			target = 774F35FC64A64D786FAEEA976DBDFCEF /* LyftSDK */;
-			targetProxy = EBCE2926D7A230DA54181768F57C6004 /* PBXContainerItemProxy */;
+			targetProxy = 3864646FCB08AE6AC58DD24B0AE2B23F /* PBXContainerItemProxy */;
 		};
-		605779F65B712B954A7435C1C285C71B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftyJSON;
-			target = D118A6A04828FD3CDA8640CD2B6796D2 /* SwiftyJSON */;
-			targetProxy = 2768F272975347CA22E090226BA62025 /* PBXContainerItemProxy */;
-		};
-		AB2649F5C72278C293C4E1405BAF19C5 /* PBXTargetDependency */ = {
+		AB14E16FE089DC367E9A956976750C2F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GoogleMaps;
 			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
-			targetProxy = FF7BDFC4793F2B7A9D615DC0B2633FA4 /* PBXContainerItemProxy */;
+			targetProxy = 9AEAAF0058097122CB356BE295AA0DE9 /* PBXContainerItemProxy */;
+		};
+		C518C5B19FDB1514F0071C9173717418 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = D118A6A04828FD3CDA8640CD2B6796D2 /* SwiftyJSON */;
+			targetProxy = 655B3C90B096C6D66479AE84CD3EDDE0 /* PBXContainerItemProxy */;
+		};
+		FAA49FD710E6F1AB4F836958065854FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = A09E0695AD823454FF0CDFBABC6AFF35 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1C00EA1360D6F77B0B75261EE0024994 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EBBE13EEAD9F9CF80720C2D2C6837AE8 /* LyftSDK.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LyftSDK/LyftSDK-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LyftSDK/LyftSDK-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/LyftSDK/LyftSDK.modulemap";
-				PRODUCT_MODULE_NAME = LyftSDK;
-				PRODUCT_NAME = LyftSDK;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4AA46832D8A16AA4E4811383B204D2A4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD289892B65DA56C082E5ED1FB0A5281 /* GoogleMaps.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		6E2226BAF771B9AEEA8FE646C18E7879 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CBFFBA2D3CA7BB653E0B806B57B8AB64 /* SwiftyJSON.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
-				PRODUCT_MODULE_NAME = SwiftyJSON;
-				PRODUCT_NAME = SwiftyJSON;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		72030B019464865673551207C6FBF5D5 /* Release */ = {
+		0F1EF67A03F22E7AFD073E4EDAB5127F /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CD143235841B347DB6DFEF6B5467A713 /* Pods-frolic.release.xcconfig */;
 			buildSettings = {
@@ -761,6 +840,129 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		1C00EA1360D6F77B0B75261EE0024994 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB241F905F178514A74C698DF11BFFAF /* LyftSDK.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LyftSDK/LyftSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LyftSDK/LyftSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/LyftSDK/LyftSDK.modulemap";
+				PRODUCT_MODULE_NAME = LyftSDK;
+				PRODUCT_NAME = LyftSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4AA46832D8A16AA4E4811383B204D2A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F64CA3BAFEC4FA53DC98FE7FF0F211F /* GoogleMaps.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6E2226BAF771B9AEEA8FE646C18E7879 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CA463F4362BC5D76527EC41BBC1E163 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		75BBB760DFD877E344322B54D29DFE64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6E0BC7A624395DDB308316550775B3A /* Alamofire.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -886,7 +1088,59 @@
 			};
 			name = Debug;
 		};
-		95F13DBF4A01DA32AC0FB1C0F3575670 /* Debug */ = {
+		B999C2A7576508203D5E5232F16EAF69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB241F905F178514A74C698DF11BFFAF /* LyftSDK.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LyftSDK/LyftSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LyftSDK/LyftSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/LyftSDK/LyftSDK.modulemap";
+				PRODUCT_MODULE_NAME = LyftSDK;
+				PRODUCT_NAME = LyftSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C7565AEA7FCD8F66CAF546DC5AF1404F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F64CA3BAFEC4FA53DC98FE7FF0F211F /* GoogleMaps.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E5FB9CE4074FA1C78951490141E3F240 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 09B19F11B27616378E56F134E2F51175 /* Pods-frolic.debug.xcconfig */;
 			buildSettings = {
@@ -923,61 +1177,9 @@
 			};
 			name = Debug;
 		};
-		B999C2A7576508203D5E5232F16EAF69 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EBBE13EEAD9F9CF80720C2D2C6837AE8 /* LyftSDK.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LyftSDK/LyftSDK-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LyftSDK/LyftSDK-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/LyftSDK/LyftSDK.modulemap";
-				PRODUCT_MODULE_NAME = LyftSDK;
-				PRODUCT_NAME = LyftSDK;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C7565AEA7FCD8F66CAF546DC5AF1404F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD289892B65DA56C082E5ED1FB0A5281 /* GoogleMaps.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		E8F35927ECB754A46E0AC8C2BACAF32D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CBFFBA2D3CA7BB653E0B806B57B8AB64 /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = 9CA463F4362BC5D76527EC41BBC1E163 /* SwiftyJSON.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1009,6 +1211,42 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		F94FD07C591B17B7E61A1528AB9BCB3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6E0BC7A624395DDB308316550775B3A /* Alamofire.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -1049,11 +1287,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F0F2F7B9EA9954D94333BE362C466D83 /* Build configuration list for PBXNativeTarget "Pods-frolic" */ = {
+		E4A5194ABAF7A4780609E0E581DA6B54 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				95F13DBF4A01DA32AC0FB1C0F3575670 /* Debug */,
-				72030B019464865673551207C6FBF5D5 /* Release */,
+				75BBB760DFD877E344322B54D29DFE64 /* Debug */,
+				F94FD07C591B17B7E61A1528AB9BCB3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFCB7A50DD780C0F4643C2DB3848ECAE /* Build configuration list for PBXNativeTarget "Pods-frolic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5FB9CE4074FA1C78951490141E3F240 /* Debug */,
+				0F1EF67A03F22E7AFD073E4EDAB5127F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

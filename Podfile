@@ -9,4 +9,6 @@ target 'frolic' do
     pod 'SwiftyJSON'
     pod 'GoogleMaps'
     pod 'LyftSDK'
+    pod 'Alamofire'
+    
 end

@@ -7,14 +7,21 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class ViewController: UIViewController {
 
+    let handler = eventbriteHandler()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    
+    @IBAction func fake_button(_ sender: Any) {
+        handler.theFunc()
+    }
 }
 
