@@ -14,6 +14,10 @@
 		89562476236402F6007972AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89562474236402F6007972AC /* Main.storyboard */; };
 		89562478236402F9007972AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89562477236402F9007972AC /* Assets.xcassets */; };
 		8956247B236402F9007972AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89562479236402F9007972AC /* LaunchScreen.storyboard */; };
+		89C11D322364EF4000B347BB /* DestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C11D312364EF4000B347BB /* DestinationViewController.swift */; };
+		89C11D342364EF5500B347BB /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C11D332364EF5500B347BB /* TimeViewController.swift */; };
+		89C11D362364EF6800B347BB /* DiningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C11D352364EF6800B347BB /* DiningViewController.swift */; };
+		89C11D382364EF8D00B347BB /* FinalPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C11D372364EF8D00B347BB /* FinalPlanViewController.swift */; };
 		C855928DEF38EAF036E48D43 /* Pods_frolic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03539ACAAE5A0B68018C11E8 /* Pods_frolic.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +33,10 @@
 		89562477236402F9007972AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8956247A236402F9007972AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8956247C236402F9007972AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89C11D312364EF4000B347BB /* DestinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationViewController.swift; sourceTree = "<group>"; };
+		89C11D332364EF5500B347BB /* TimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
+		89C11D352364EF6800B347BB /* DiningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiningViewController.swift; sourceTree = "<group>"; };
+		89C11D372364EF8D00B347BB /* FinalPlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalPlanViewController.swift; sourceTree = "<group>"; };
 		BD9AA48B931B6C095B763E7F /* Pods-frolic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-frolic.debug.xcconfig"; path = "Target Support Files/Pods-frolic/Pods-frolic.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +97,10 @@
 			isa = PBXGroup;
 			children = (
 				89562472236402F6007972AC /* ViewController.swift */,
+				89C11D352364EF6800B347BB /* DiningViewController.swift */,
+				89C11D312364EF4000B347BB /* DestinationViewController.swift */,
+				89C11D332364EF5500B347BB /* TimeViewController.swift */,
+				89C11D372364EF8D00B347BB /* FinalPlanViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -252,9 +264,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				89562473236402F6007972AC /* ViewController.swift in Sources */,
+				89C11D342364EF5500B347BB /* TimeViewController.swift in Sources */,
 				891BFE2A2364864C001C9839 /* File.swift in Sources */,
 				8956246F236402F6007972AC /* AppDelegate.swift in Sources */,
+				89C11D382364EF8D00B347BB /* FinalPlanViewController.swift in Sources */,
 				89562471236402F6007972AC /* SceneDelegate.swift in Sources */,
+				89C11D322364EF4000B347BB /* DestinationViewController.swift in Sources */,
+				89C11D362364EF6800B347BB /* DiningViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
