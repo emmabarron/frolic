@@ -12,196 +12,187 @@ import SwiftyJSON
 import LyftSDK
 import CoreLocation
 
+class Place {
+    let name :String
+    let place_id :String
+    let formatted_address :String;
+    let price_level :Int
+    let user_rating :Double
+
+    init(name :String, place_id :String, formatted_address :String,
+        price_level :Int = -1, user_rating :Double) {
+            self.name = name
+            self.place_id = place_id
+            self.formatted_address = formatted_address
+            self.price_level = price_level
+            self.user_rating = user_rating
+        }
+}
+
+enum Type {
+    case MEAL
+    case SNACK
+    case ACTIVITY
+}
+
 class eventbriteHandler {
 
     //-----KEY------
-    let eventbrite_key = "token=ZYFPUYLPXW6SGOSVFTNB" //append the key
+    let key = "token=ZYFPUYLPXW6SGOSVFTNB" //append the key
 
     //-----URLS------
-    let all_event_categories = "https://www.eventbriteapi.com/v3/categories/?token=ZYFPUYLPXW6SGOSVFTNB"
     let sampleURL = "https://www.eventbriteapi.com/v3/events/search/?start_date.keyword=this_week&token=ZYFPUYLPXW6SGOSVFTNB"
 
     //------API REQUEST----
-    public func theFunc() {
+    public func getEvents(completionHandler:@escaping (String?) -> Void) {
+        let all_event_categories = "https://www.eventbriteapi.com/v3/categories/?" + key
         Alamofire.request(all_event_categories, method: .get).responseJSON {
             response in
             if response.result.isSuccess {
-                //print("hello")
                 let ebJSON : JSON = JSON(response.result.value!)
-                //print(ebJSON["locale"])
-                self.dealWithJSON(ebJSON)
+                completionHandler(ebJSON["locale"].string!)
             }
-            else {
-                print("didnt work")
+        }
+    }
+}
+
+/*
+    Example body code for button that prints out duration
+        let handler = googleHandler()
+        handler.getTravelTime(travelMode: "driving", origin: "Powder Springs Georgia", destination: "Atlanta, Georgia") { duration in print(duration!)}
+        
+    Example body code for geocode button
+        let handler = googleHandler()
+        handler.geocode(location: "Atlanta, Georgia") {tup in
+            print(tup!.0)
+            print(tup!.1)
+        }
+    }
+*/
+
+class googleHandler {
+
+    //-----KEY------
+    let key = "AIzaSyDOcvJbQYUYZVoOOGCKCTC5djD0nQ4-qOU"
+    let snack_options :Array = ["bakery", "cafe", "coffee shop", "boba"]
+    let meal_options :Array = ["restaurant", "food", "point_of_interest", "establishment"]
+    let activity_options :Array = ["amusement park", "aquarium", "art gallery", "bowling alley", "museum", "shopping mall", "tourist_attraction", "zoo"]
+
+    func getTravelTime(travelMode: String, origin: String, destination: String, completionHandler:@escaping (String?) -> Void) {
+        let travel_mode : String = "mode=" + travelMode;
+        let destinationsArg = "destinations=" + String(destination.map {$0 == " " ? "+" : $0});
+        let originsArg = "origins=" + String(origin.map {$0 == " " ? "+" : $0});
+        let queryString = "https://maps.googleapis.com/maps/api/distancematrix/json?"
+            + originsArg + "&" + destinationsArg + "&" + travel_mode + "&key=" + key
+
+        Alamofire.request(queryString, method: .get).responseJSON {
+            response in
+            if response.result.isSuccess {
+                let googleMapJSON : JSON = JSON(response.result.value!)
+                completionHandler(googleMapJSON["rows"][0]["elements"][0]["duration"]["text"].string!)
             }
         }
     }
 
-    //----ACCESSING JSON------
-    func dealWithJSON(_ json: JSON) {
-        let result = json["locale"]
-        print(result)
+    public func findPlace(_ type :Type, _ detail :String, latitude :Double, longitude :Double, radius :Int = 2000, completionHandler: @escaping (Place?) -> Void) {
+        var more_detail :String = detail
+        switch type {
+        case .MEAL:
+            more_detail = detail + " " + meal_options.randomElement()!
+        case .SNACK:
+            more_detail = detail + " " + snack_options.randomElement()!
+        case .ACTIVITY:
+            more_detail = detail + " " + activity_options.randomElement()!
+        }
+        let location_type :String = more_detail.replacingOccurrences(of: " ", with: "%20") + "%20"
+        let circle :String = "circle:" + String(radius)
+        let location :String = "@" + String(latitude) + "," + String(longitude)
+        let location_bias = circle + location
+        let fields_of_interest :String = "place_id,formatted_address,name,price_level,rating"
+        let queryString :String = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=" + location_type
+            + "&inputtype=textquery&fields=" + fields_of_interest + "&location_bias=" + location_bias + "&key=" + key;
+        Alamofire.request(queryString, method: .get).responseJSON {
+            response in
+            if response.result.isSuccess {
+                let placeJSON : JSON = JSON(response.result.value!)
+                let place = placeJSON["candidates"][0]
+                let place_obj :Place = Place(
+                    name: place["name"].string!,
+                    place_id: place["place_id"].string!,
+                    formatted_address: place["formatted_address"].string!,
+                    price_level: place["price_level"].intValue,
+                    user_rating: place["user_rating"].doubleValue
+                )
+                completionHandler(place_obj)
+            }
+        }
+    }
+
+    // Place Details Request to get the actual hours of a place (beyond just "open-now")?
+
+    // public func getAutocomplete() {
+        // when users typed in locations, they could autopopulate with possiblea answers
+    // }
+
+    public func geocode(location: String, completionHandler:@escaping ((Double, Double)?) -> Void) {
+        let replaced = String(location.map {$0 == " " ? "+" : $0});
+        let queryString : String = "https://maps.googleapis.com/maps/api/geocode/json?address=" + replaced + "&key=" + key
+        Alamofire.request(queryString, method: .get).responseJSON {
+            response in
+            if response.result.isSuccess {
+                let geocodeJSON :JSON = JSON(response.result.value!)
+                let pair :JSON = geocodeJSON["results"][0]["geometry"]["location"]
+                let latitude :Double = pair["lat"].doubleValue
+                let longitude :Double = pair["lng"].doubleValue
+                completionHandler((latitude, longitude))
+            }
+        }
+    }
+
+    public func ungeocode(latitude: Double, longitude: Double, completionHandler:@escaping (String?) -> Void) {
+        let query1 = "https://maps.googleapis.com/maps/api/geocode/json?latlng="
+        let query2 = String(latitude) + "," + String(longitude) + "&key=" + key
+        let queryString = query1 + query2
+
+        Alamofire.request(queryString, method: .get).responseJSON {
+            response in
+            if response.result.isSuccess {
+                let ungeocodeJSON : JSON = JSON(response.result.value!)
+                let address = ungeocodeJSON["results"][1]["formatted_address"].string!
+                completionHandler(address)
+            }
+        }
     }
 }
 
-//class googleHandler {
-//
-//    //-----KEY------
-//    let key = "AIzaSyBZxaCnQa-YCja2TMDp8rHg41PtUEV5IQo"
-//
-//    var travelTime : Int = 0
-//    //let GMSPlacesClient.provideAPIKey(key)
-//
-////    func getTravelTime(travelMode : String, origin : String, destination : String) -> Int {
-////        var travel_mode : String = "mode=" + travelMode;
-////        let destinationsArg = "destinations=" + String(destination.map {$0 == " " ? "+" : $0});
-////        var originsArg = "origins=" + String(origin.map {$0 == " " ? "+" : $0});
-////        let queryString = "https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&"
-////            + originsArg + "&" + destinationsArg + "&" + travel_mode + "&key=" + key
-////        var duration : String
-////
-////        Alamofire.request(queryString, method: .get).responseJSON {
-////            response in
-////            if response.result.isSuccess {
-////                let googleMapJSON : JSON = JSON(response.result.value!)
-////                duration = googleMapJSON["rows"]["elements"]["duration"]["text"].string!
-////                //print("durationSeconds \(duration / 60)")
-////            } else {
-////                print("getTravelTime didnt work")
-////            }
-////        }
-////        return Int(duration)! / 60
-////    }
-//
-//    func getTravelTime(travelMode : String, origin : String, destination : String) {
-//        let travel_mode : String = "mode=" + travelMode;
-//        let destinationsArg = "destinations=" + String(destination.map {$0 == " " ? "+" : $0});
-//        let originsArg = "origins=" + String(origin.map {$0 == " " ? "+" : $0});
-//        let queryString = "https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&"
-//            + originsArg + "&" + destinationsArg + "&" + travel_mode + "&key=" + key
-//
-//        Alamofire.request(queryString, method: .get).responseJSON {
-//            response in
-//            if response.result.isSuccess {
-//                let googleMapJSON : JSON = JSON(response.result.value!)
-//                let duration : String = googleMapJSON["rows"]["elements"]["duration"]["text"].string!
-//                //print("durationSeconds \(duration / 60)")
-//                self.assignTravelTime(Int(duration)! / 60)
-//            } else {
-//                print("getTravelTime didnt work")
-//            }
-//        }
-//        //return Int(duration)! / 60
-//    }
-//
-//    func assignTravelTime(_ duration: Int) {
-//        travelTime = duration
-//    }
-//
-//    public func getTravelTime() -> Int {
-//        return travelTime
-//    }
-//
-//    // public func findPlace(_ type : String) {
-//    //     let location_type = "input=" + String(type.map {$0 == " " ? "%20" : $0})
-//    //     let location_bias = "&locationbias=circle:2000@47.6918452,-122.2226413"
-//    //     queryString: String = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=" + location_type
-//    //         + " &inputtype=textquery&fields=formatted_address,name,opening_hours,rating&key=" + key;
-//    //     let places : Set = [""]
-//    // }
-//
-//    // public func getAutocomplete() {
-//        // when users typed in locations, they could autopopulate with possiblea answers
-//    // }
-//
-////    public func geocode(location: String) -> (Double, Double) {
-////        let replaced = String(location.map {$0 == " " ? "+" : $0});
-////        var queryString : String = "https://maps.googleapis.com/maps/api/geocode/json?address=" + replaced + "&key=" + key
-////        var latitude : String
-////        var longitude : String
-////        Alamofire.request(queryString, method: .get).responseJSON {
-////            response in
-////            if response.result.isSuccess {
-////                let geocodeJSON : JSON = JSON(response.result.value!)
-////                latitude = geocodeJSON["results"]["geometry"]["location"]["lat"].string!
-////                longitude = geocodeJSON["results"]["geometry"]["location"]["lng"].string!
-////                print(latitude)
-////                print(longitude)
-////                //return (Double(latitude), Double(longitude))
-////            } else {
-////                print("geocode didnt work")
-////            }
-////        }
-////        return (Double(latitude)!, Double(longitude)!)
-////    }
-//
-//    var theGeocode : (Double, Double) = (0.0, 0.0)
-//
-//    public func geocode(location: String) {
-//        let replaced = String(location.map {$0 == " " ? "+" : $0});
-//        let queryString : String = "https://maps.googleapis.com/maps/api/geocode/json?address=" + replaced + "&key=" + key
-//        var _ : String
-//        var _ : String
-//        Alamofire.request(queryString, method: .get).responseJSON {
-//            response in
-//            if response.result.isSuccess {
-//                let geocodeJSON : JSON = JSON(response.result.value!)
-//                let latitude : String = geocodeJSON["results"]["geometry"]["location"]["lat"].string!
-//                let longitude : String = geocodeJSON["results"]["geometry"]["location"]["lng"].string!
-//                print(latitude)
-//                print(longitude)
-//                self.assignGeocode((Double(latitude)!, Double(longitude)!))
-//
-//            } else {
-//                print("geocode didnt work")
-//            }
-//        }
-//        //return (Double(latitude)!, Double(longitude)!)
-//    }
-//
-//    func assignGeocode(_ theCode: (Double, Double)) {
-//        theGeocode = theCode
-//    }
-//
-//    public func getGeocode() -> (Double, Double) {
-//        return theGeocode
-//    }
-//
-//    public func ungeocode(latitude: Double, longitude: Double) -> String {
-//        let query1 = "https://maps.googleapis.com/maps/api/geocode/json?latlng="
-//        let query2 = String(latitude) + "," + String(longitude) + "&key=" + key
-//        let queryString = query1 + query2
-//        var address : String
-//
-//        Alamofire.request(queryString, method: .get).responseJSON {
-//            response in
-//            if response.result.isSuccess {
-//                let ungeocodeJSON : JSON = JSON(response.result.value!)
-//                address = ungeocodeJSON["results"]["formatted_address"].string!
-//                print(address)
-//            } else {
-//                print("ungeocode didnt work")
-//            }
-//        }
-//        return address
-//    }
-//}
-//
-//class lyft {
-//    public func getCost(pickup : String, dropoff : String) {
-//        var myGoogleHandler = googleHandler()
-//        let (pickup_lat, pickup_long) = myGoogleHandler.geocode(location: pickup)
-//        let (dest_lat, dest_long) = myGoogleHandler.geocode(location: dropoff)
-//
-//        let pickup = CLLocationCoordinate2D(latitude: pickup_lat, longitude: pickup_long)
-//        let destination = CLLocationCoordinate2D(latitude: dest_lat, longitude: dest_long)
-//
-//        LyftAPI.costEstimates(from: pickup, to: destination, rideKind: .Standard) { result in
-//            result.value?.forEach { costEstimate in
-//                print("Min: \(costEstimate.estimate!.minEstimate.amount)$")
-//                print("Max: \(costEstimate.estimate!.maxEstimate.amount)$")
-//            }
-//            // return average of (max-min) / 2 for each cost in cost?
-//        }
-//    }
-//}
+/*
+    HOW TO CALL THE GETCOSTS method from ViewController
+    let handler = lyftHandler()
+    handler.getCosts(pickup: "Klaus Advanced Computing Building Atlanta Georgia", dropoff: "5554 cathers creek drive powder springs ga") {
+            cost in print(cost)
+    }
+*/
+
+class lyftHandler {
+    public func getCosts(pickup : String, dropoff : String, completionHandler:@escaping (Double) -> Void) {
+        let handler = googleHandler()
+        handler.geocode(location: pickup) {
+            start in
+            handler.geocode(location: dropoff) {
+                dest in
+                let pickup = CLLocationCoordinate2D(latitude: start!.0, longitude: start!.1)
+                let destination = CLLocationCoordinate2D(latitude: dest!.0, longitude: dest!.1)
+                var amt :Double = 0
+                var count :Int = 0
+                LyftAPI.costEstimates(from: pickup, to: destination, rideKind: .Standard) { result in
+                    result.value?.forEach { costEstimate in
+                        amt += Double(truncating: costEstimate.estimate!.minEstimate.amount as NSNumber)
+                        amt += Double(truncating: costEstimate.estimate!.maxEstimate.amount as NSNumber)
+                        count += 1
+                    }
+                    completionHandler(amt / Double(2 * count))
+                }
+            }
+        }
+    }
+}
