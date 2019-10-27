@@ -50,7 +50,7 @@ enum Type {
 class eventbriteHandler {
 
     //-----KEY------
-    let key = "token=ZYFPUYLPXW6SGOSVFTNB" //append the key
+    let key = "token=NOT_FOR_YOUR_EYES" //append the key
 
     //-----URLS------
     let sampleURL = "https://www.eventbriteapi.com/v3/events/search/?start_date.keyword=this_week&token=ZYFPUYLPXW6SGOSVFTNB"
@@ -85,7 +85,7 @@ class eventbriteHandler {
 class googleHandler {
 
     //-----KEY------
-    let key = "AIzaSyDOcvJbQYUYZVoOOGCKCTC5djD0nQ4-qOU"
+    let key = "NOT_FOR_YOUR_EYES"
     let snack_options :Array = ["bakery", "cafe", "coffee shop", "boba"]
     let meal_options :Array = ["restaurant", "food", "point_of_interest", "establishment"]
     let activity_options :Array = ["amusement park", "aquarium", "art gallery", "bowling alley", "museum", "shopping mall", "tourist_attraction", "zoo"]
