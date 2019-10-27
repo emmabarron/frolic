@@ -174,7 +174,7 @@ class googleHandler {
 */
 
 class lyftHandler {
-    public func getCosts(pickup : String, dropoff : String, completionHandler:@escaping (Double) -> Void) {
+    public func getCosts(pickup : String, dropoff : String, completionHandler:@escaping (Double, Int) -> Void) {
         let handler = googleHandler()
         handler.geocode(location: pickup) {
             start in
@@ -184,13 +184,15 @@ class lyftHandler {
                 let destination = CLLocationCoordinate2D(latitude: dest!.0, longitude: dest!.1)
                 var amt :Double = 0
                 var count :Int = 0
+                var duration :Int = 0
                 LyftAPI.costEstimates(from: pickup, to: destination, rideKind: .Standard) { result in
                     result.value?.forEach { costEstimate in
                         amt += Double(truncating: costEstimate.estimate!.minEstimate.amount as NSNumber)
                         amt += Double(truncating: costEstimate.estimate!.maxEstimate.amount as NSNumber)
+                        duration += Int(truncating: costEstimate.estimate!.durationSeconds as NSNumber) / 60
                         count += 1
                     }
-                    completionHandler(amt / Double(2 * count))
+                    completionHandler(amt / Double(2 * count), duration)
                 }
             }
         }
