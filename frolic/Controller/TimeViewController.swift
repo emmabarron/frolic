@@ -19,6 +19,9 @@ class TimeViewController: UIViewController {
     var endTime : Date = Date()
     
     var transportationType : String = "car"
+    
+    //DELETE ME
+    let algo = Algo()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,6 +53,10 @@ class TimeViewController: UIViewController {
     }
     
     @IBAction func nextClicked(_ sender: UIButton) {
+        //DELETE ME
+        algo.parseDay(startTime, endTime)
+        algo.findIntervals()
+           
         self.performSegue(withIdentifier: "time2dine", sender: self)
     }
     @IBAction func backClicked(_ sender: UIButton) {

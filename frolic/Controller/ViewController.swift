@@ -14,14 +14,13 @@ class ViewController: UIViewController {
 
     let handler = eventbriteHandler()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     
     @IBAction func fake_button(_ sender: Any) {
-        handler.theFunc()
+        //handler.theFunc()
     }
     
     @IBAction func adventureClicked(_ sender: UIButton) {

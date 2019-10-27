@@ -23,6 +23,7 @@
 		89C11D382364EF8D00B347BB /* FinalPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C11D372364EF8D00B347BB /* FinalPlanViewController.swift */; };
 		89C11D3C236500F300B347BB /* Code.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89C11D3B236500F300B347BB /* Code.storyboard */; };
 		89C11D3E236501A200B347BB /* CodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C11D3D236501A200B347BB /* CodeViewController.swift */; };
+		89D14F752365719600F705F1 /* Algo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D14F742365719600F705F1 /* Algo.swift */; };
 		C855928DEF38EAF036E48D43 /* Pods_frolic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03539ACAAE5A0B68018C11E8 /* Pods_frolic.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		89C11D372364EF8D00B347BB /* FinalPlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalPlanViewController.swift; sourceTree = "<group>"; };
 		89C11D3B236500F300B347BB /* Code.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Code.storyboard; sourceTree = "<group>"; };
 		89C11D3D236501A200B347BB /* CodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeViewController.swift; sourceTree = "<group>"; };
+		89D14F742365719600F705F1 /* Algo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Algo.swift; sourceTree = "<group>"; };
 		BD9AA48B931B6C095B763E7F /* Pods-frolic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-frolic.debug.xcconfig"; path = "Target Support Files/Pods-frolic/Pods-frolic.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				891BFE292364864C001C9839 /* File.swift */,
+				89D14F742365719600F705F1 /* Algo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89D14F752365719600F705F1 /* Algo.swift in Sources */,
 				89562473236402F6007972AC /* ViewController.swift in Sources */,
 				89C11D342364EF5500B347BB /* TimeViewController.swift in Sources */,
 				891BFE2A2364864C001C9839 /* File.swift in Sources */,

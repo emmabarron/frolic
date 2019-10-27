@@ -25,6 +25,8 @@ import Foundation
  
  */
 
-class algorithm {
-    
+class Algorithm {
+    func printMe() {
+        print(hello)
+    }
 }
