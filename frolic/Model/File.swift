@@ -18,10 +18,9 @@ class Place {
     let formatted_address :String;
     let price_level :Int
     let user_rating :Double
-    let type :Type
 
     init(name :String, place_id :String, formatted_address :String,
-        price_level :Int=-1, user_rating :Double) {
+        price_level :Int = -1, user_rating :Double) {
             self.name = name
             self.place_id = place_id
             self.formatted_address = formatted_address
@@ -75,9 +74,9 @@ class googleHandler {
 
     //-----KEY------
     let key = "AIzaSyDOcvJbQYUYZVoOOGCKCTC5djD0nQ4-qOU"
-    snack_options :Array = ["bakery", "cafe", "coffee shop", "boba"]
-    meal_options :Array = ["restaurant", "food", "point_of_interest", "establishment"]
-    activity_options :Array = ["amusement park", "aquarium", "art gallery", "bowling alley", "museum", "shopping mall", "tourist_attraction", "zoo"]
+    let snack_options :Array = ["bakery", "cafe", "coffee shop", "boba"]
+    let meal_options :Array = ["restaurant", "food", "point_of_interest", "establishment"]
+    let activity_options :Array = ["amusement park", "aquarium", "art gallery", "bowling alley", "museum", "shopping mall", "tourist_attraction", "zoo"]
 
     func getTravelTime(travelMode: String, origin: String, destination: String, completionHandler:@escaping (String?) -> Void) {
         let travel_mode : String = "mode=" + travelMode;
@@ -95,32 +94,34 @@ class googleHandler {
         }
     }
 
-    public func findPlace(type :Type, _ detail :String, latitude :Int, longitude :Int, radius :Integer = 2000, completionHandler: @escaping (Place?) -> Void) {
-        switch (type) {
-            case MEAL
-                detail += " " + meal_options.randomElement()!
-            case SNACK
-                detail += " " + snack_options.randomElement()!
-            case ACTIVITY
-                detail += " " + activity_options.randomElement()!
+    public func findPlace(_ type :Type, _ detail :String, latitude :Double, longitude :Double, radius :Int = 2000, completionHandler: @escaping (Place?) -> Void) {
+        var more_detail :String = detail
+        switch type {
+        case .MEAL:
+            more_detail = detail + " " + meal_options.randomElement()!
+        case .SNACK:
+            more_detail = detail + " " + snack_options.randomElement()!
+        case .ACTIVITY:
+            more_detail = detail + " " + activity_options.randomElement()!
         }
-        let location_type :String = "input=" + String(detail.map {$0 == " " ? "%20" : $0})
-        let location_bias :String = "&locationbias=circle:" + radius + "@" + latitute + "," + longitude
-        let fields_of_interest :Set = "formatted_address,name,price_level,rating"
-        queryString: String = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=" + location_type
-            + " &inputtype=textquery&fields=" + fields_of_interest + "&key=" + key;
-        
+        let location_type :String = more_detail.replacingOccurrences(of: " ", with: "%20") + "%20"
+        let circle :String = "circle:" + String(radius)
+        let location :String = "@" + String(latitude) + "," + String(longitude)
+        let location_bias = circle + location
+        let fields_of_interest :String = "place_id,formatted_address,name,price_level,rating"
+        let queryString :String = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=" + location_type
+            + "&inputtype=textquery&fields=" + fields_of_interest + "&location_bias=" + location_bias + "&key=" + key;
         Alamofire.request(queryString, method: .get).responseJSON {
             response in
             if response.result.isSuccess {
                 let placeJSON : JSON = JSON(response.result.value!)
                 let place = placeJSON["candidates"][0]
-(                let place_obj :Place = new Place(
-                    name: place["name"],
-                    place_id: place["place_id"],
-                    formatted_address: place["formatted_address"],
-                    price_level: Int(place["price_level"]),
-                    user_rating: Double(place["user_rating"])
+                let place_obj :Place = Place(
+                    name: place["name"].string!,
+                    place_id: place["place_id"].string!,
+                    formatted_address: place["formatted_address"].string!,
+                    price_level: place["price_level"].intValue,
+                    user_rating: place["user_rating"].doubleValue
                 )
                 completionHandler(place_obj)
             }
