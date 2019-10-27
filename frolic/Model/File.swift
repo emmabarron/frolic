@@ -12,6 +12,30 @@ import SwiftyJSON
 import LyftSDK
 import CoreLocation
 
+class Place {
+    let name :String
+    let place_id :String
+    let formatted_address :String;
+    let price_level :Int
+    let user_rating :Double
+    let type :Type
+
+    init(name :String, place_id :String, formatted_address :String,
+        price_level :Int=-1, user_rating :Double) {
+            self.name = name
+            self.place_id = place_id
+            self.formatted_address = formatted_address
+            self.price_level = price_level
+            self.user_rating = user_rating
+        }
+}
+
+enum Type {
+    case MEAL
+    case SNACK
+    case ACTIVITY
+}
+
 class eventbriteHandler {
 
     //-----KEY------
@@ -51,6 +75,9 @@ class googleHandler {
 
     //-----KEY------
     let key = "AIzaSyDOcvJbQYUYZVoOOGCKCTC5djD0nQ4-qOU"
+    snack_options :Array = ["bakery", "cafe", "coffee shop", "boba"]
+    meal_options :Array = ["restaurant", "food", "point_of_interest", "establishment"]
+    activity_options :Array = ["amusement park", "aquarium", "art gallery", "bowling alley", "museum", "shopping mall", "tourist_attraction", "zoo"]
 
     func getTravelTime(travelMode: String, origin: String, destination: String, completionHandler:@escaping (String?) -> Void) {
         let travel_mode : String = "mode=" + travelMode;
@@ -68,18 +95,44 @@ class googleHandler {
         }
     }
 
-    // public func findPlace(_ type : String) {
-    //     let location_type = "input=" + String(type.map {$0 == " " ? "%20" : $0})
-    //     let location_bias = "&locationbias=circle:2000@47.6918452,-122.2226413"
-    //     queryString: String = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=" + location_type
-    //         + " &inputtype=textquery&fields=formatted_address,name,opening_hours,rating&key=" + key;
-    //     let places : Set = [""]
-    // }
+    public func findPlace(type :Type, _ detail :String, latitude :Int, longitude :Int, radius :Integer = 2000, completionHandler: @escaping (Place?) -> Void) {
+        switch (type) {
+            case MEAL
+                detail += " " + meal_options.randomElement()!
+            case SNACK
+                detail += " " + snack_options.randomElement()!
+            case ACTIVITY
+                detail += " " + activity_options.randomElement()!
+        }
+        let location_type :String = "input=" + String(detail.map {$0 == " " ? "%20" : $0})
+        let location_bias :String = "&locationbias=circle:" + radius + "@" + latitute + "," + longitude
+        let fields_of_interest :Set = "formatted_address,name,price_level,rating"
+        queryString: String = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=" + location_type
+            + " &inputtype=textquery&fields=" + fields_of_interest + "&key=" + key;
+        
+        Alamofire.request(queryString, method: .get).responseJSON {
+            response in
+            if response.result.isSuccess {
+                let placeJSON : JSON = JSON(response.result.value!)
+                let place = placeJSON["candidates"][0]
+(                let place_obj :Place = new Place(
+                    name: place["name"],
+                    place_id: place["place_id"],
+                    formatted_address: place["formatted_address"],
+                    price_level: Int(place["price_level"]),
+                    user_rating: Double(place["user_rating"])
+                )
+                completionHandler(place_obj)
+            }
+        }
+    }
+
+    // Place Details Request to get the actual hours of a place (beyond just "open-now")?
 
     // public func getAutocomplete() {
         // when users typed in locations, they could autopopulate with possiblea answers
-//    // }
-//
+    // }
+
     public func geocode(location: String, completionHandler:@escaping ((Double, Double)?) -> Void) {
         let replaced = String(location.map {$0 == " " ? "+" : $0});
         let queryString : String = "https://maps.googleapis.com/maps/api/geocode/json?address=" + replaced + "&key=" + key
