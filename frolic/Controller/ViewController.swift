@@ -23,5 +23,12 @@ class ViewController: UIViewController {
     @IBAction func fake_button(_ sender: Any) {
         handler.theFunc()
     }
+    
+    @IBAction func adventureClicked(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "view2destination", sender: self)
+    }
+    @IBAction func popularClicked(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "view2code", sender: self)
+    }
 }
 

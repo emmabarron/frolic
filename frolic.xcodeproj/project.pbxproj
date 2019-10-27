@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89185C96236531E00096C6D4 /* BufferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89185C95236531E00096C6D4 /* BufferViewController.swift */; };
+		89185C9A236541360096C6D4 /* AdventureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89185C98236541360096C6D4 /* AdventureTableViewCell.swift */; };
+		89185C9B236541360096C6D4 /* AdventureTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89185C99236541360096C6D4 /* AdventureTableViewCell.xib */; };
 		891BFE2A2364864C001C9839 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891BFE292364864C001C9839 /* File.swift */; };
 		8956246F236402F6007972AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8956246E236402F6007972AC /* AppDelegate.swift */; };
 		89562471236402F6007972AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89562470236402F6007972AC /* SceneDelegate.swift */; };
@@ -18,12 +21,17 @@
 		89C11D342364EF5500B347BB /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C11D332364EF5500B347BB /* TimeViewController.swift */; };
 		89C11D362364EF6800B347BB /* DiningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C11D352364EF6800B347BB /* DiningViewController.swift */; };
 		89C11D382364EF8D00B347BB /* FinalPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C11D372364EF8D00B347BB /* FinalPlanViewController.swift */; };
+		89C11D3C236500F300B347BB /* Code.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89C11D3B236500F300B347BB /* Code.storyboard */; };
+		89C11D3E236501A200B347BB /* CodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C11D3D236501A200B347BB /* CodeViewController.swift */; };
 		C855928DEF38EAF036E48D43 /* Pods_frolic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03539ACAAE5A0B68018C11E8 /* Pods_frolic.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		03539ACAAE5A0B68018C11E8 /* Pods_frolic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_frolic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E58325696999BE6F257BAAB /* Pods-frolic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-frolic.release.xcconfig"; path = "Target Support Files/Pods-frolic/Pods-frolic.release.xcconfig"; sourceTree = "<group>"; };
+		89185C95236531E00096C6D4 /* BufferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BufferViewController.swift; sourceTree = "<group>"; };
+		89185C98236541360096C6D4 /* AdventureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventureTableViewCell.swift; sourceTree = "<group>"; };
+		89185C99236541360096C6D4 /* AdventureTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdventureTableViewCell.xib; sourceTree = "<group>"; };
 		891BFE292364864C001C9839 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		8956246B236402F6007972AC /* frolic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = frolic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8956246E236402F6007972AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +45,8 @@
 		89C11D332364EF5500B347BB /* TimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
 		89C11D352364EF6800B347BB /* DiningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiningViewController.swift; sourceTree = "<group>"; };
 		89C11D372364EF8D00B347BB /* FinalPlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalPlanViewController.swift; sourceTree = "<group>"; };
+		89C11D3B236500F300B347BB /* Code.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Code.storyboard; sourceTree = "<group>"; };
+		89C11D3D236501A200B347BB /* CodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeViewController.swift; sourceTree = "<group>"; };
 		BD9AA48B931B6C095B763E7F /* Pods-frolic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-frolic.debug.xcconfig"; path = "Target Support Files/Pods-frolic/Pods-frolic.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,6 +68,15 @@
 				03539ACAAE5A0B68018C11E8 /* Pods_frolic.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89185C97236540BD0096C6D4 /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				89185C98236541360096C6D4 /* AdventureTableViewCell.swift */,
+				89185C99236541360096C6D4 /* AdventureTableViewCell.xib */,
+			);
+			path = "Custom Cell";
 			sourceTree = "<group>";
 		};
 		89562462236402F6007972AC = {
@@ -101,6 +120,8 @@
 				89C11D312364EF4000B347BB /* DestinationViewController.swift */,
 				89C11D332364EF5500B347BB /* TimeViewController.swift */,
 				89C11D372364EF8D00B347BB /* FinalPlanViewController.swift */,
+				89C11D3D236501A200B347BB /* CodeViewController.swift */,
+				89185C95236531E00096C6D4 /* BufferViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -109,6 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				89562474236402F6007972AC /* Main.storyboard */,
+				89C11D3B236500F300B347BB /* Code.storyboard */,
+				89185C97236540BD0096C6D4 /* Custom Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -192,8 +215,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8956247B236402F9007972AC /* LaunchScreen.storyboard in Resources */,
+				89C11D3C236500F300B347BB /* Code.storyboard in Resources */,
 				89562478236402F9007972AC /* Assets.xcassets in Resources */,
 				89562476236402F6007972AC /* Main.storyboard in Resources */,
+				89185C9B236541360096C6D4 /* AdventureTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +294,9 @@
 				8956246F236402F6007972AC /* AppDelegate.swift in Sources */,
 				89C11D382364EF8D00B347BB /* FinalPlanViewController.swift in Sources */,
 				89562471236402F6007972AC /* SceneDelegate.swift in Sources */,
+				89185C9A236541360096C6D4 /* AdventureTableViewCell.swift in Sources */,
+				89185C96236531E00096C6D4 /* BufferViewController.swift in Sources */,
+				89C11D3E236501A200B347BB /* CodeViewController.swift in Sources */,
 				89C11D322364EF4000B347BB /* DestinationViewController.swift in Sources */,
 				89C11D362364EF6800B347BB /* DiningViewController.swift in Sources */,
 			);
