@@ -60,8 +60,9 @@ class eventbriteHandler {
         let location_address = "&location.address=" + address
         let location_within = "&location.within=" + String(radius) + "mi"
         let location = location_address + location_within
-        let event_query = "https://www.eventbriteapi.com/v3/events/search/?" + location + start_date + "&" + key
-        // start_date.range_start?
+        var event_query = "https://www.eventbriteapi.com/v3/events/search/?" + location + start_date + "&" + key
+        
+        event_query = "https://www.eventbriteapi.com/v3/events/search/?start_date.keyword=this_week&location.address=georgia_tech&location.within=5mi&token=ZYFPUYLPXW6SGOSVFTNB"
 
         Alamofire.request(event_query, method: .get).responseJSON {
             response in
@@ -89,6 +90,9 @@ class eventbriteHandler {
                     i += 1
                 }
                 completionHandler(arr)
+            } else {
+                
+                print("fail")
             }
         }
     }
