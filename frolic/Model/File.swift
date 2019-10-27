@@ -12,6 +12,16 @@ import SwiftyJSON
 import LyftSDK
 import CoreLocation
 
+class Event {
+   let place : Place
+   let time : (Int, Int) // idk what this should look like
+
+   init(place :Place, time :(Int, Int)) {
+       self.place = place
+       self.time = time
+   }
+}
+
 class Place {
     let name :String
     let formatted_address :String;
@@ -44,9 +54,12 @@ class eventbriteHandler {
     //-----URLS------
     let sampleURL = "https://www.eventbriteapi.com/v3/events/search/?start_date.keyword=this_week&location.address=georgia_tech&location.within=5mi&token=ZYFPUYLPXW6SGOSVFTNB"
 
-    public func getEvent(address :String, radius :Int = 3 completionHandler:@escaping (Event?) -> Void) {        
+    public func getEvent(address :String, radius :Int = 3, completionHandler:@escaping (Array<Event>?) -> Void) {
+        let start_keyword :String = "this_week"
         let start_date = "&start_date.keyword=" + start_keyword  // ex, this_week
-        let location = "&location.address=" + address + "&location.within=" + radius + "mi"
+        let location_address = "&location.address=" + address
+        let location_within = "&location.within=" + String(radius) + "mi"
+        let location = location_address + location_within
         let event_query = "https://www.eventbriteapi.com/v3/events/search/?" + location + start_date + "&" + key
         // start_date.range_start?
 
@@ -54,27 +67,28 @@ class eventbriteHandler {
             response in
             if response.result.isSuccess {
                 let eventJSON : JSON = JSON(response.result.value!)
-                events :Array = eventJSON["events"]
-                i :Int = 0
-                e :Event = nil
-                while (e == nil && i < events.count) {
+                let events :Array = eventJSON["events"].arrayValue
+                var i :Int = 0
+                var e :Event = Event(place: Place(name: "", formatted_address: "", price_level: -1, user_rating: -1, type: Type.ACTIVITY), time: (0,0))
+                var arr :Array<Event> = Array<Event>()
+                while (i < events.count) {
                     if (true) { // compare dates & times
-                        // convert e into an Event
-                        let venue_query :String = "https://www.eventbriteapi.com/v3/venues/venue_id/" + events[i]["venue_id"]
-                        Alamofire.request(event_query, method: .get).responseJSON {
+                        let venue_query :String = "https://www.eventbriteapi.com/v3/venues/venue_id/" + events[i]["venue_id"].string!
+                        Alamofire.request(venue_query, method: .get).responseJSON {
                             location in
                             if location.result.isSuccess {
                                 let locationJSON : JSON = JSON(location.result.value!)
-                                let address :String = locationJSON["address"]["address_1"]
-                                let p :Place = Place(name: address, formatted_address: address, price_level: (events[i]["is_free"] ? 0 : 3), -1,
+                                let address :String = locationJSON["address"]["address_1"].string!
+                                let p :Place = Place(name: address, formatted_address: address, price_level: (events[i]["is_free"].boolValue ? 0 : 3),
                                     user_rating: -1, type: Type.ACTIVITY)
-                                e = Event(place: p, time: (0,0)))
-                                completionHandler(e)
+                                e = Event(place: p, time: (0,0))
+                                arr.append(e)
                             }
                         }
                     }
                     i += 1
                 }
+                completionHandler(arr)
             }
         }
     }

@@ -25,23 +25,13 @@ import Foundation
  
  */
 
- class Event {
-    let place : Place
-    let time : (Int, Int) // idk what this should look like
-
-    init(place :Place, time :(Int, Int)) {
-        self.place = place
-        self.time = time
-    }
- }
-
 class algorithm {
     public func replace(replacedEvent :Event) {
         var event :Event = nil
         let handler = googleHandler()
         handler.geocode(replacedEvent.place.formatted_address) {
+            lat_lng in
             while (event == nil) {
-                lat_lng in 
                 handler.findPlace(replacedEvent.place.type, latitude: lat_lng.0, longitude: lat_lng.1, radius :Int = 500) {
                     p in 
                     if (true) { // if the event fits in the time constraints
