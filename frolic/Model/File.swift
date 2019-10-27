@@ -14,18 +14,18 @@ import CoreLocation
 
 class Place {
     let name :String
-    let place_id :String
     let formatted_address :String;
     let price_level :Int
     let user_rating :Double
+    let type :Type
 
-    init(name :String, place_id :String, formatted_address :String,
-        price_level :Int = -1, user_rating :Double) {
+    init(name :String, formatted_address :String,
+        price_level :Int = -1, user_rating :Double, type :Type) {
             self.name = name
-            self.place_id = place_id
             self.formatted_address = formatted_address
             self.price_level = price_level
             self.user_rating = user_rating
+            self.type = type
         }
 }
 
@@ -39,21 +39,47 @@ class eventbriteHandler {
 
     //-----KEY------
     let key = "token=ZYFPUYLPXW6SGOSVFTNB" //append the key
+    let category_options :Array = ["Music", "Food & Drink", "Community & Culture", "Performing & Visual Arts", "Film, Media & Entertainment"]
 
     //-----URLS------
-    let sampleURL = "https://www.eventbriteapi.com/v3/events/search/?start_date.keyword=this_week&token=ZYFPUYLPXW6SGOSVFTNB"
+    let sampleURL = "https://www.eventbriteapi.com/v3/events/search/?start_date.keyword=this_week&location.address=georgia_tech&location.within=5mi&token=ZYFPUYLPXW6SGOSVFTNB"
 
-    //------API REQUEST----
-    public func getEvents(completionHandler:@escaping (String?) -> Void) {
-        let all_event_categories = "https://www.eventbriteapi.com/v3/categories/?" + key
-        Alamofire.request(all_event_categories, method: .get).responseJSON {
+    public func getEvent(address :String, radius :Int = 3 completionHandler:@escaping (Event?) -> Void) {        
+        let start_date = "&start_date.keyword=" + start_keyword  // ex, this_week
+        let location = "&location.address=" + address + "&location.within=" + radius + "mi"
+        let event_query = "https://www.eventbriteapi.com/v3/events/search/?" + location + start_date + "&" + key
+        // start_date.range_start?
+
+        Alamofire.request(event_query, method: .get).responseJSON {
             response in
             if response.result.isSuccess {
-                let ebJSON : JSON = JSON(response.result.value!)
-                completionHandler(ebJSON["locale"].string!)
+                let eventJSON : JSON = JSON(response.result.value!)
+                events :Array = eventJSON["events"]
+                i :Int = 0
+                e :Event = nil
+                while (e == nil && i < events.count) {
+                    if (true) { // compare dates & times
+                        // convert e into an Event
+                        let venue_query :String = "https://www.eventbriteapi.com/v3/venues/venue_id/" + events[i]["venue_id"]
+                        Alamofire.request(event_query, method: .get).responseJSON {
+                            location in
+                            if location.result.isSuccess {
+                                let locationJSON : JSON = JSON(location.result.value!)
+                                let address :String = locationJSON["address"]["address_1"]
+                                let p :Place = Place(name: address, formatted_address: address, price_level: (events[i]["is_free"] ? 0 : 3), -1,
+                                    user_rating: -1, type: Type.ACTIVITY)
+                                e = Event(place: p, time: (0,0)))
+                                completionHandler(e)
+                            }
+                        }
+                    }
+                    i += 1
+                }
             }
         }
     }
+
+    
 }
 
 /*
@@ -94,9 +120,9 @@ class googleHandler {
         }
     }
 
-    public func findPlace(_ type :Type, _ detail :String, latitude :Double, longitude :Double, radius :Int = 2000, completionHandler: @escaping (Place?) -> Void) {
+    public func findPlace(_ given_type :Type, _ detail :String = "", latitude :Double, longitude :Double, radius :Int = 2000, completionHandler: @escaping (Place?) -> Void) {
         var more_detail :String = detail
-        switch type {
+        switch given_type {
         case .MEAL:
             more_detail = detail + " " + meal_options.randomElement()!
         case .SNACK:
@@ -118,10 +144,10 @@ class googleHandler {
                 let place = placeJSON["candidates"][0]
                 let place_obj :Place = Place(
                     name: place["name"].string!,
-                    place_id: place["place_id"].string!,
                     formatted_address: place["formatted_address"].string!,
                     price_level: place["price_level"].intValue,
-                    user_rating: place["user_rating"].doubleValue
+                    user_rating: place["user_rating"].doubleValue,
+                    type: given_type
                 )
                 completionHandler(place_obj)
             }
