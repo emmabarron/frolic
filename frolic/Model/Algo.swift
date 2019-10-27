@@ -69,7 +69,7 @@ class Algo {
         print(userEndTime)
     }
     
-    func findIntervals() {
+    func findIntervals() -> [(String, (Int, Int))] {
         for i in 0..<6 {
             //----
             if allFoodTimes[i][0] >= userStartTime[0] && allFoodTimes[i][0] <= userEndTime[0] {
@@ -128,5 +128,35 @@ class Algo {
         print(breaksPart2.count)
         print("COUNT: hopefully order")
         print(final.count)
+        
+        return(final)
+    }
+    
+//    public func replace(replacedEvent :Event) -> Event {
+//        var event :Event
+//        let handler = googleHandler()
+//        handler.geocode(location: replacedEvent.place.formatted_address) {
+//            lat_lng in
+//            while (event == nil) {
+//                handler.findPlace(replacedEvent.place.type, latitude: lat_lng!.0, longitude: lat_lng!.1, radius: 500) {
+//                    p in
+//                    if (true) { // if the event fits in the time constraints
+//                        event = Event(place: p!, time: (0,0))
+//                    }
+//                }
+//            }
+//        }
+//        return event;
+//    }
+
+    public func calculateEventPrice(events :Array<Event>) -> String {
+        var price :Int = 0;
+        var count :Int = 0;
+        for event in events {
+            price += event.place.price_level;
+            count += 1;
+        }
+        return String(repeating: "$", count: price / count)
     }
 }
+

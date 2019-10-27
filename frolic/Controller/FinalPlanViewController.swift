@@ -10,35 +10,39 @@ import UIKit
 
 class FinalPlanViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    var events : Array<Place> = Array<Place>()
+    var event_2 : Array<Place> = Array<Place>()
+    var counter : Int = 0
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        print("begin loading")
         tableView.delegate = self
         tableView.dataSource = self
         
         tableView.register(UINib(nibName: "AdventureTableViewCell", bundle: nil), forCellReuseIdentifier: "adventureCell")
+        print("stop loading")
     }
     
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "adventureCell", for: indexPath) as! AdventureTableViewCell
-        
-        let array1 = ["title1", "title2", "title3", "title4", "title1", "title2", "title3", "title4"]
-        let array2 = ["par.ljlkse jfSIofseo ragraph 1 yayayayyay", "paragraph 2 yayayayyay", "paragraph 3 yayayayyay", "paragraph 4 yayayayyay", "par.ljlkse jfSIofseo ragraph 1 yayayayyay", "paragraph 2 yayayayyay", "paragraph 3 yayayayyay", "paragraph 4 yayayayyay"]
-        let array3 = ["1", "2", "3", "4", "1", "2", "3", "40"]
-        
-        cell.theNumber.text = array3[indexPath.row]
-        cell.theTitle.text = array1[indexPath.row]
-        cell.theParagraph.text = array2[indexPath.row]
-        
+        cell.theNumber.text = String(counter)
+        cell.theTitle.text = events[indexPath.row].name
+        cell.theParagraph.text = String(events[indexPath.row].price_level)
+        counter += counter
         return cell
+//        let array1 = ["title1", "title2", "title3", "title4", "title1", "title2", "title3", "title4"]
+//        let array2 = ["par.ljlkse jfSIofseo ragraph 1 yayayayyay", "paragraph 2 yayayayyay", "paragraph 3 yayayayyay", "paragraph 4 yayayayyay", "par.ljlkse jfSIofseo ragraph 1 yayayayyay", "paragraph 2 yayayayyay", "paragraph 3 yayayayyay", "paragraph 4 yayayayyay"]
+        //let array3 = ["1", "2", "3", "4", "5", "6", "7", "8"]
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 8
+        return events.count
     }
     
     func configureTableView() {

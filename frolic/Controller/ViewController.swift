@@ -13,6 +13,7 @@ import SwiftyJSON
 class ViewController: UIViewController {
 
     let handler = eventbriteHandler()
+    let algo = Algo()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +21,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func fake_button(_ sender: Any) {
-        //handler.theFunc()
+        let handler = lyftHandler()
+        return handler.getCosts(pickup: "klaus advanced computing building", dropoff: "coca cola building atlanta georgia") {
+            cost,duration in
+            // do stuff w/ cost & duration here
+            print(cost)
+        }
     }
     
     @IBAction func adventureClicked(_ sender: UIButton) {

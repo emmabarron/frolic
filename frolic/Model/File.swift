@@ -12,20 +12,32 @@ import SwiftyJSON
 import LyftSDK
 import CoreLocation
 
+class Event {
+   let place : Place
+   let time : (Int, Int) // idk what this should look like
+
+   init(place :Place, time :(Int, Int)) {
+       self.place = place
+       self.time = time
+   }
+}
+
 class Place {
     let name :String
     let place_id :String
     let formatted_address :String;
     let price_level :Int
     let user_rating :Double
+    let type: Type
 
     init(name :String, place_id :String, formatted_address :String,
-        price_level :Int = -1, user_rating :Double) {
+         price_level :Int = -1, user_rating :Double, type: Type) {
             self.name = name
             self.place_id = place_id
             self.formatted_address = formatted_address
             self.price_level = price_level
             self.user_rating = user_rating
+        self.type = type
         }
 }
 
@@ -94,15 +106,14 @@ class googleHandler {
         }
     }
 
-    public func findPlace(_ type :Type, _ detail :String, latitude :Double, longitude :Double, radius :Int = 2000, completionHandler: @escaping (Place?) -> Void) {
+    public func findPlace(_ giventype :Type, _ detail :String="", latitude :Double, longitude :Double, radius :Int = 2000, completionHandler: @escaping (Place?) -> Void) {
         var more_detail :String = detail
-        switch type {
-        case .MEAL:
-            more_detail = detail + " " + meal_options.randomElement()!
-        case .SNACK:
-            more_detail = detail + " " + snack_options.randomElement()!
-        case .ACTIVITY:
-            more_detail = detail + " " + activity_options.randomElement()!
+        if (giventype == Type.MEAL) {
+            more_detail += " " + meal_options.randomElement()!
+        } else if (giventype == Type.SNACK) {
+            more_detail += " " + snack_options.randomElement()!
+        } else {
+            more_detail += " " + activity_options.randomElement()!
         }
         let location_type :String = more_detail.replacingOccurrences(of: " ", with: "%20") + "%20"
         let circle :String = "circle:" + String(radius)
@@ -121,7 +132,8 @@ class googleHandler {
                     place_id: place["place_id"].string!,
                     formatted_address: place["formatted_address"].string!,
                     price_level: place["price_level"].intValue,
-                    user_rating: place["user_rating"].doubleValue
+                    user_rating: place["user_rating"].double ?? -1,
+                    type: giventype
                 )
                 completionHandler(place_obj)
             }
